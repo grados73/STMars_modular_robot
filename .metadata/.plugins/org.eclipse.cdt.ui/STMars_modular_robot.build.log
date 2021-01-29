@@ -1,10 +1,10 @@
-22:26:12 **** Incremental Build of configuration Debug for project STMars_modular_robot ****
+22:52:40 **** Incremental Build of configuration Debug for project STMars_modular_robot ****
 make -j4 all 
 arm-none-eabi-size   STMars_modular_robot.elf 
    text	   data	    bss	    dec	    hex	filename
-  34328	    516	   2380	  37224	   9168	STMars_modular_robot.elf
+  33792	    516	   2380	  36688	   8f50	STMars_modular_robot.elf
 Finished building: default.size.stdout
  
 
-22:26:13 Build Finished. 0 errors, 0 warnings. (took 253ms)
+22:52:40 Build Finished. 0 errors, 0 warnings. (took 281ms)
 

@@ -346,3 +346,182 @@ arm-none-eabi-size   STMars_modular_robot.elf
   34328	    516	   2380	  37224	   9168	STMars_modular_robot.elf
 Finished building: default.size.stdout
  
+22:39:03 **** Incremental Build of configuration Debug for project 14_msm_nuc_UART_DMA_RX_TX_Pars2 ****
+make -j4 all 
+arm-none-eabi-size   14_msm_nuc_UART_DMA_RX_TX_Pars2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32420	    516	   2236	  35172	   8964	14_msm_nuc_UART_DMA_RX_TX_Pars2.elf
+Finished building: default.size.stdout
+ 
+22:39:03 **** Incremental Build of configuration Debug for project STMars_modular_robot ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/uartdma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uartdma.d" -MT"Core/Src/uartdma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/uartdma.o"
+../Core/Src/main.c:184:13: warning: 'MX_NVIC_Init' defined but not used [-Wunused-function]
+ static void MX_NVIC_Init(void)
+             ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "STMars_modular_robot.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\STM32MARS\STMars_modular_robot\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STMars_modular_robot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STMars_modular_robot.elf
+ 
+arm-none-eabi-objdump -h -S  STMars_modular_robot.elf  > "STMars_modular_robot.list"
+arm-none-eabi-objcopy  -O binary  STMars_modular_robot.elf  "STMars_modular_robot.bin"
+arm-none-eabi-size   STMars_modular_robot.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33808	    516	   2380	  36704	   8f60	STMars_modular_robot.elf
+Finished building: default.size.stdout
+ 
+Finished building: STMars_modular_robot.bin
+ 
+Finished building: STMars_modular_robot.list
+ 
+22:39:10 **** Incremental Build of configuration Debug for project STMars_modular_robot ****
+make -j4 all 
+arm-none-eabi-size   STMars_modular_robot.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33808	    516	   2380	  36704	   8f60	STMars_modular_robot.elf
+Finished building: default.size.stdout
+ 
+22:42:22 **** Incremental Build of configuration Debug for project 14_msm_nuc_UART_DMA_RX_TX_Pars2 ****
+make -j4 all 
+arm-none-eabi-size   14_msm_nuc_UART_DMA_RX_TX_Pars2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32420	    516	   2236	  35172	   8964	14_msm_nuc_UART_DMA_RX_TX_Pars2.elf
+Finished building: default.size.stdout
+ 
+22:42:22 **** Incremental Build of configuration Debug for project STMars_modular_robot ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:184:13: warning: 'MX_NVIC_Init' defined but not used [-Wunused-function]
+ static void MX_NVIC_Init(void)
+             ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "STMars_modular_robot.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\STM32MARS\STMars_modular_robot\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STMars_modular_robot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STMars_modular_robot.elf
+ 
+arm-none-eabi-objdump -h -S  STMars_modular_robot.elf  > "STMars_modular_robot.list"
+arm-none-eabi-objcopy  -O binary  STMars_modular_robot.elf  "STMars_modular_robot.bin"
+arm-none-eabi-size   STMars_modular_robot.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34328	    516	   2380	  37224	   9168	STMars_modular_robot.elf
+Finished building: default.size.stdout
+ 
+Finished building: STMars_modular_robot.bin
+ 
+Finished building: STMars_modular_robot.list
+ 
+22:42:28 **** Incremental Build of configuration Debug for project 14_msm_nuc_UART_DMA_RX_TX_Pars2 ****
+make -j4 all 
+arm-none-eabi-size   14_msm_nuc_UART_DMA_RX_TX_Pars2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32420	    516	   2236	  35172	   8964	14_msm_nuc_UART_DMA_RX_TX_Pars2.elf
+Finished building: default.size.stdout
+ 
+22:42:28 **** Incremental Build of configuration Debug for project STMars_modular_robot ****
+make -j4 all 
+arm-none-eabi-size   STMars_modular_robot.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34328	    516	   2380	  37224	   9168	STMars_modular_robot.elf
+Finished building: default.size.stdout
+ 
+22:42:31 **** Incremental Build of configuration Debug for project STMars_modular_robot ****
+make -j4 all 
+arm-none-eabi-size   STMars_modular_robot.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34328	    516	   2380	  37224	   9168	STMars_modular_robot.elf
+Finished building: default.size.stdout
+ 
+22:46:46 **** Incremental Build of configuration Debug for project 14_msm_nuc_UART_DMA_RX_TX_Pars2 ****
+make -j4 all 
+arm-none-eabi-size   14_msm_nuc_UART_DMA_RX_TX_Pars2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32420	    516	   2236	  35172	   8964	14_msm_nuc_UART_DMA_RX_TX_Pars2.elf
+Finished building: default.size.stdout
+ 
+22:46:47 **** Incremental Build of configuration Debug for project STMars_modular_robot ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/uartdma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uartdma.d" -MT"Core/Src/uartdma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/uartdma.o"
+arm-none-eabi-gcc -o "STMars_modular_robot.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\STM32MARS\STMars_modular_robot\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STMars_modular_robot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STMars_modular_robot.elf
+ 
+arm-none-eabi-objdump -h -S  STMars_modular_robot.elf  > "STMars_modular_robot.list"
+arm-none-eabi-objcopy  -O binary  STMars_modular_robot.elf  "STMars_modular_robot.bin"
+arm-none-eabi-size   STMars_modular_robot.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34328	    516	   2380	  37224	   9168	STMars_modular_robot.elf
+Finished building: default.size.stdout
+ 
+Finished building: STMars_modular_robot.bin
+ 
+Finished building: STMars_modular_robot.list
+ 
+22:46:52 **** Incremental Build of configuration Debug for project STMars_modular_robot ****
+make -j4 all 
+arm-none-eabi-size   STMars_modular_robot.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34328	    516	   2380	  37224	   9168	STMars_modular_robot.elf
+Finished building: default.size.stdout
+ 
+22:49:47 **** Incremental Build of configuration Debug for project 14_msm_nuc_UART_DMA_RX_TX_Pars2 ****
+make -j4 all 
+arm-none-eabi-size   14_msm_nuc_UART_DMA_RX_TX_Pars2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32420	    516	   2236	  35172	   8964	14_msm_nuc_UART_DMA_RX_TX_Pars2.elf
+Finished building: default.size.stdout
+ 
+22:49:47 **** Incremental Build of configuration Debug for project STMars_modular_robot ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/uartdma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uartdma.d" -MT"Core/Src/uartdma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/uartdma.o"
+arm-none-eabi-gcc -o "STMars_modular_robot.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\STM32MARS\STMars_modular_robot\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STMars_modular_robot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STMars_modular_robot.elf
+ 
+arm-none-eabi-objdump -h -S  STMars_modular_robot.elf  > "STMars_modular_robot.list"
+arm-none-eabi-objcopy  -O binary  STMars_modular_robot.elf  "STMars_modular_robot.bin"
+arm-none-eabi-size   STMars_modular_robot.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34320	    516	   2380	  37216	   9160	STMars_modular_robot.elf
+Finished building: default.size.stdout
+ 
+Finished building: STMars_modular_robot.bin
+ 
+Finished building: STMars_modular_robot.list
+ 
+22:49:51 **** Incremental Build of configuration Debug for project STMars_modular_robot ****
+make -j4 all 
+arm-none-eabi-size   STMars_modular_robot.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34320	    516	   2380	  37216	   9160	STMars_modular_robot.elf
+Finished building: default.size.stdout
+ 
+22:52:35 **** Incremental Build of configuration Debug for project 14_msm_nuc_UART_DMA_RX_TX_Pars2 ****
+make -j4 all 
+arm-none-eabi-size   14_msm_nuc_UART_DMA_RX_TX_Pars2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32420	    516	   2236	  35172	   8964	14_msm_nuc_UART_DMA_RX_TX_Pars2.elf
+Finished building: default.size.stdout
+ 
+22:52:36 **** Incremental Build of configuration Debug for project STMars_modular_robot ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:184:13: warning: 'MX_NVIC_Init' defined but not used [-Wunused-function]
+ static void MX_NVIC_Init(void)
+             ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "STMars_modular_robot.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\STM32MARS\STMars_modular_robot\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STMars_modular_robot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STMars_modular_robot.elf
+ 
+arm-none-eabi-objdump -h -S  STMars_modular_robot.elf  > "STMars_modular_robot.list"
+arm-none-eabi-objcopy  -O binary  STMars_modular_robot.elf  "STMars_modular_robot.bin"
+arm-none-eabi-size   STMars_modular_robot.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33792	    516	   2380	  36688	   8f50	STMars_modular_robot.elf
+Finished building: default.size.stdout
+ 
+Finished building: STMars_modular_robot.bin
+ 
+Finished building: STMars_modular_robot.list
+ 
+22:52:40 **** Incremental Build of configuration Debug for project STMars_modular_robot ****
+make -j4 all 
+arm-none-eabi-size   STMars_modular_robot.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33792	    516	   2380	  36688	   8f50	STMars_modular_robot.elf
+Finished building: default.size.stdout
+ 

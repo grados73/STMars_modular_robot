@@ -49,7 +49,7 @@ void UARTDMA_DmaReceiveIrqHandler(UARTDMA_HandleTypeDef *huartdma)
 
 	DMA_Base_Registers *DmaRegisters = (DMA_Base_Registers *) huartdma->huart->hdmarx->DmaBaseAddress; // Take registers base address
 
-	if (__HAL_DMA_GET_IT_SOURCE(huartdma->huart->hdmarx, DMA_IT_TC) != RESET) // Check if interrupt source is Transfer Complete
+ 	if (__HAL_DMA_GET_IT_SOURCE(huartdma->huart->hdmarx, (DMA_IT_TC || DMA_IT_TE)) != RESET) // Check if interrupt source is Transfer Complete
 	{
 		DmaRegisters->IFCR = DMA_FLAG_TC5 << huartdma->huart->hdmarx->ChannelIndex;	// Clear Transfer Complete flag
 		//DmaRegisters->IFCR = DMA_FLAG_TC4 << huartdma->huart->hdmarx->ChannelIndex;	// Clear Transfer Complete flag

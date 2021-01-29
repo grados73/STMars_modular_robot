@@ -4,6 +4,6 @@ uartdma.c:81:5:UARTDMA_PutCharToTxBuffer	16	static
 uartdma.c:94:9:UARTDMA_GetLineFromReceiveBuffer	24	static
 uartdma.c:120:6:UARTDMA_Print	24	static
 uartdma.c:140:9:UARTDMA_IsDataReceivedReady	16	static
-uartdma.c:151:9:UARTDMA_IsDataTransferReady	16	static
-uartdma.c:163:6:UARTDMA_TransmitEvent	24	static
-uartdma.c:189:6:UARTDMA_Init	16	static
+uartdma.c:152:9:UARTDMA_IsDataTransferReady	16	static
+uartdma.c:164:6:UARTDMA_TransmitEvent	24	static
+uartdma.c:190:6:UARTDMA_Init	16	static

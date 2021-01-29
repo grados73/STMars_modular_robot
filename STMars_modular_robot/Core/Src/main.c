@@ -97,7 +97,7 @@ int main(void)
 	  //
 	  	  // RECEIVE
 	  	  //
-	  	  if(UARTDMA_IsDataReceivedReady(&huartdma1))
+	  	  if(UARTDM A_IsDataReceivedReady(&huartdma1))
 	  	  {
 	  		  UART_ParseLine(&huartdma1); // Parsing function
 	  	  }
@@ -105,7 +105,7 @@ int main(void)
 	  	  //
 	  	  // TRANSMIT
 	  	  //
-	  	  UARTDMA_TransmitEvent(&huartdma1);
+	//  	  UARTDMA_TransmitEvent(&huartdma1);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
