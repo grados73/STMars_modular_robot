@@ -772,3 +772,55 @@
 2021-01-29 10:43:13,144 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1845mS.
 2021-01-29 10:43:13,144 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
 2021-01-29 10:43:13,145 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-29 16:32:15,423 [INFO] DbMcusDocs:145 - JSON generation date=Wed Jan 20 10:17:20 CET 2021 (1611134240)
+2021-01-29 16:32:15,537 [INFO] DbMcusDocs:81 - Found 614 MCUs documents
+2021-01-29 16:33:57,857 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,667x440,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-01-29 16:34:03,880 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-01-29 16:49:37,775 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,667x440,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-01-29 16:50:10,352 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 587702856 Bytes (1035993088)
+2021-01-29 16:50:11,830 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 599759440 Bytes (1035993088)
+2021-01-29 16:50:12,718 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 685031992 Bytes (1035993088)
+2021-01-29 16:50:13,012 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-01-29 16:50:13,012 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-01-29 16:50:13,012 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-01-29 16:50:13,012 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: DMA
+2021-01-29 16:50:13,012 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-01-29 16:50:13,013 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-01-29 16:50:13,013 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-01-29 16:50:13,013 [INFO] CodeGenerator:639 - code generatio: config db path: D:\STM32\PROGRAMS\STM32_Cube_IDE\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-01-29 16:50:13,223 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot\MXTmpFiles\license.tmp_save
+2021-01-29 16:50:13,275 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot\MXTmpFiles\license.tmp
+2021-01-29 16:50:13,308 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot\Core\Src\gpio.c_save
+2021-01-29 16:50:13,354 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot\Core\Src\gpio.c
+2021-01-29 16:50:13,359 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot\Core\Inc\gpio.h_save
+2021-01-29 16:50:13,402 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot\Core\Inc\gpio.h
+2021-01-29 16:50:13,847 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-29 16:50:13,885 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot\Core\Src\dma.c_save
+2021-01-29 16:50:13,929 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot\Core\Src\dma.c
+2021-01-29 16:50:13,932 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot\Core\Inc\dma.h_save
+2021-01-29 16:50:13,974 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot\Core\Inc\dma.h
+2021-01-29 16:50:13,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-29 16:50:13,982 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot\Core\Src\usart.c_save
+2021-01-29 16:50:14,061 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot\Core\Src\usart.c
+2021-01-29 16:50:14,065 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot\Core\Inc\usart.h_save
+2021-01-29 16:50:14,113 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot\Core\Inc\usart.h
+2021-01-29 16:50:14,122 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot\Core\Src\stm32l4xx_it.c_save
+2021-01-29 16:50:14,193 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot\Core\Src\stm32l4xx_it.c
+2021-01-29 16:50:14,196 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot\Core\Inc\stm32l4xx_it.h_save
+2021-01-29 16:50:14,238 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot\Core\Inc\stm32l4xx_it.h
+2021-01-29 16:50:14,247 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot\Core\Src\stm32l4xx_hal_msp.c_save
+2021-01-29 16:50:14,309 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot\Core\Src\stm32l4xx_hal_msp.c
+2021-01-29 16:50:14,313 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot\MXTmpFiles\system.tmp_save
+2021-01-29 16:50:14,349 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot\MXTmpFiles\system.tmp
+2021-01-29 16:50:14,356 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot\Core\Inc\stm32l4xx_hal_conf.h_save
+2021-01-29 16:50:14,405 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot\Core\Inc\stm32l4xx_hal_conf.h
+2021-01-29 16:50:14,435 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot\Core\Inc\main.h_save
+2021-01-29 16:50:14,480 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot\Core\Inc\main.h
+2021-01-29 16:50:14,485 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot\Core\Src\main.c_save
+2021-01-29 16:50:14,551 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot\Core\Src\main.c
+2021-01-29 16:50:15,306 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 150mS.
+2021-01-29 16:50:15,309 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-01-29 16:50:15,568 [INFO] ConfigFileManager:1238 - The Die is : DIE435
+2021-01-29 16:50:17,180 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1871mS.
+2021-01-29 16:50:17,180 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-29 16:50:17,181 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.

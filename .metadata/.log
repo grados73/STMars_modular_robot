@@ -37,3 +37,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-01-29 10:40:58.454
 !MESSAGE Indexed 'STMars_modular_robot' (25 sources, 83 headers) in 4.14 sec: 5,838 declarations; 34,552 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.005%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-01-29 11:56:17.949
+!MESSAGE Indexed '14_msm_nuc_UART_DMA_RX_TX_Pars2' (28 sources, 108 headers) in 2.49 sec: 8,198 declarations; 29,588 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.39%)

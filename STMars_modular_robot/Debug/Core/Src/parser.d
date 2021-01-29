@@ -1,4 +1,4 @@
-Core/Src/stm32l4xx_it.o: ../Core/Src/stm32l4xx_it.c ../Core/Inc/main.h \
+Core/Src/parser.o: ../Core/Src/parser.c ../Core/Inc/main.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
  ../Core/Inc/stm32l4xx_hal_conf.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h \
@@ -27,8 +27,8 @@ Core/Src/stm32l4xx_it.o: ../Core/Src/stm32l4xx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h \
- ../Core/Inc/stm32l4xx_it.h ../Core/Inc/uartdma.h \
- ../Core/Inc/ring_buffer.h
+ ../Core/Inc/parser.h ../Core/Inc/uartdma.h ../Core/Inc/ring_buffer.h \
+ ../Core/Inc/uartdma.h
 
 ../Core/Inc/main.h:
 
@@ -88,8 +88,10 @@ Core/Src/stm32l4xx_it.o: ../Core/Src/stm32l4xx_it.c ../Core/Inc/main.h \
 
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h:
 
-../Core/Inc/stm32l4xx_it.h:
+../Core/Inc/parser.h:
 
 ../Core/Inc/uartdma.h:
 
 ../Core/Inc/ring_buffer.h:
+
+../Core/Inc/uartdma.h:
