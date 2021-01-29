@@ -1,5 +1,5 @@
 uartdma.c:27:6:UARTDMA_UartIrqHandler	24	static
-uartdma.c:45:6:UARTDMA_DmaReceiveIrqHandler	32	static
+uartdma.c:44:6:UARTDMA_DmaReceiveIrqHandler	32	static
 uartdma.c:81:5:UARTDMA_PutCharToTxBuffer	16	static
 uartdma.c:94:9:UARTDMA_GetLineFromReceiveBuffer	24	static
 uartdma.c:120:6:UARTDMA_Print	24	static

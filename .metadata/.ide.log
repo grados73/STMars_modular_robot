@@ -1269,3 +1269,5 @@
 2021-01-29 20:10:10,774 [INFO] IPUIPlugin:64 - create IPUIPlugin
 2021-01-29 20:10:10,788 [INFO] OpenFileManager:294 - Restore cursor
 2021-01-29 20:10:16,972 [INFO] DmaTabbedPanel:192 - Cannot restore the selected Tab for DMA
+2021-01-29 20:14:13,449 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-01-29 20:35:06,573 [INFO] DmaTabbedPanel:192 - Cannot restore the selected Tab for DMA

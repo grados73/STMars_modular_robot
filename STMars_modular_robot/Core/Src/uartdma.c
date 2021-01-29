@@ -29,8 +29,7 @@ void UARTDMA_UartIrqHandler(UARTDMA_HandleTypeDef *huartdma)
 	if(huartdma->huart->Instance->ISR & UART_FLAG_IDLE)       // Check if Idle flag is set
 	{
 		volatile uint32_t tmp;
-		tmp = huartdma->huart->Instance->ISR;                      // Read status register
-		tmp = huartdma->huart->Instance->RQR;                      // Read data register
+		tmp = huartdma->huart->Instance->ICR &= USART_ICR_IDLECF;
 
 		huartdma->huart->hdmarx->Instance->CCR &= ~DMA_CCR_EN; // Disable DMA - it will force Transfer Complete interrupt if it's enabled
 
@@ -52,7 +51,8 @@ void UARTDMA_DmaReceiveIrqHandler(UARTDMA_HandleTypeDef *huartdma)
 
 	if (__HAL_DMA_GET_IT_SOURCE(huartdma->huart->hdmarx, DMA_IT_TC) != RESET) // Check if interrupt source is Transfer Complete
 	{
-		DmaRegisters->IFCR = DMA_FLAG_TC4 << huartdma->huart->hdmarx->ChannelIndex;	// Clear Transfer Complete flag
+		DmaRegisters->IFCR = DMA_FLAG_TC5 << huartdma->huart->hdmarx->ChannelIndex;	// Clear Transfer Complete flag
+		//DmaRegisters->IFCR = DMA_FLAG_TC4 << huartdma->huart->hdmarx->ChannelIndex;	// Clear Transfer Complete flag
 
 		Length = DMA_RX_BUFFER_SIZE - huartdma->huart->hdmarx->Instance->CNDTR; // Get the Length of transfered data
 

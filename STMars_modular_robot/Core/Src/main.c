@@ -85,7 +85,7 @@ int main(void)
   MX_USART1_UART_Init();
 
   /* Initialize interrupts */
-  MX_NVIC_Init();
+ // MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
   UARTDMA_Init(&huartdma1, &huart1);
   /* USER CODE END 2 */
