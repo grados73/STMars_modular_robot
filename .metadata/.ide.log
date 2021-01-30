@@ -1271,3 +1271,667 @@
 2021-01-29 20:10:16,972 [INFO] DmaTabbedPanel:192 - Cannot restore the selected Tab for DMA
 2021-01-29 20:14:13,449 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
 2021-01-29 20:35:06,573 [INFO] DmaTabbedPanel:192 - Cannot restore the selected Tab for DMA
+2021-01-29 23:57:00,624 [INFO] MainUpdater:2644 - connection check result : 10
+2021-01-29 23:57:00,998 [INFO] ServerAccessManage:348 - Download File mcusDocs.json._tmp_
+2021-01-29 23:57:01,135 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2021-01-29 23:57:01,297 [INFO] ServerAccessManage:348 - Download File mcusFeaturesAndDescription.json._tmp_
+2021-01-29 23:57:04,324 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2021-01-29 23:57:04,469 [INFO] ServerAccessManage:348 - Download File boardsDocs.json._tmp_
+2021-01-29 23:57:04,667 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2021-01-29 23:57:04,790 [INFO] ServerAccessManage:348 - Download File boards.json._tmp_
+2021-01-29 23:57:05,019 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2021-01-29 23:57:05,260 [INFO] ServerAccessManage:348 - Download File cube-finder-db.zip
+2021-01-29 23:57:13,529 [INFO] FileExtend:225 - Unzip File : cube-finder-db.zip
+2021-01-29 23:57:13,530 [INFO] FileExtend:240 - Standard Zip Deflate
+2021-01-29 23:57:14,096 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2021-01-29 23:57:14,543 [INFO] ServerAccessManage:348 - Download File crdb.zip
+2021-01-29 23:57:14,898 [INFO] FileExtend:225 - Unzip File : crdb.zip
+2021-01-29 23:57:14,900 [INFO] FileExtend:240 - Standard Zip Deflate
+2021-01-29 23:57:15,001 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2021-01-29 23:57:15,133 [INFO] ServerAccessManage:348 - Download File tutoVideoDB.zip
+2021-01-29 23:57:15,349 [INFO] FileExtend:225 - Unzip File : tutoVideoDB.zip
+2021-01-29 23:57:15,349 [INFO] FileExtend:240 - Standard Zip Deflate
+2021-01-29 23:57:15,431 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2021-01-29 23:57:15,436 [INFO] DbMcusDocs:145 - JSON generation date=Wed Jan 20 10:17:20 CET 2021 (1611134240)
+2021-01-29 23:57:15,578 [INFO] DbMcusDocs:81 - Found 614 MCUs documents
+2021-01-29 23:57:15,582 [INFO] ApiDb:263 - Save user favorites file C:\Users\grad_/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2021-01-29 23:57:15,582 [INFO] ApiDb:267 - User favorites MCUs=[]
+2021-01-29 23:57:15,583 [INFO] DbMcusXml:97 - Load MCU database from D:\STM32\PROGRAMS\STM32_Cube_IDE\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/mcu/families.xml
+2021-01-29 23:57:16,140 [INFO] DbMcusJson:92 - JSON generation date=Wed Jan 20 10:17:20 CET 2021 (1611134240)
+2021-01-29 23:57:16,809 [INFO] DbMcus:176 - Found 1835 MCUs (1796 are supported by CubeMX, 1804 are visible in CubeMX)
+2021-01-29 23:57:16,810 [INFO] ApiDb:238 - Load user favorites file C:\Users\grad_/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2021-01-29 23:57:16,810 [INFO] ApiDb:242 - User favorites MCUs=[]
+2021-01-29 23:57:16,810 [INFO] DbMcus:188 - Set 0 / 0 favorites MCUs
+2021-01-29 23:57:16,829 [INFO] DbBoardsDocs:145 - JSON generation date=Wed Jan 20 10:17:20 CET 2021 (1611134240)
+2021-01-29 23:57:16,839 [INFO] DbBoardsDocs:81 - Found 190 boards documents
+2021-01-29 23:57:16,841 [INFO] ApiDb:263 - Save user favorites file C:\Users\grad_/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2021-01-29 23:57:16,841 [INFO] ApiDb:267 - User favorites Boards=[]
+2021-01-29 23:57:16,850 [INFO] DbBoardsPdsc:91 - Found 24 items
+2021-01-29 23:57:16,851 [INFO] DbBoardsPdsc:91 - Found 9 items
+2021-01-29 23:57:16,854 [INFO] DbBoardsPdsc:91 - Found 32 items
+2021-01-29 23:57:16,856 [INFO] DbBoardsPdsc:91 - Found 1 items
+2021-01-29 23:57:16,860 [INFO] DbBoardsPdsc:91 - Found 45 items
+2021-01-29 23:57:16,864 [INFO] DbBoardsPdsc:91 - Found 41 items
+2021-01-29 23:57:16,866 [INFO] DbBoardsPdsc:91 - Found 2 items
+2021-01-29 23:57:16,867 [INFO] DbBoardsPdsc:91 - Found 4 items
+2021-01-29 23:57:16,869 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2021-01-29 23:57:16,870 [WARN] DbBoardsPdsc:255 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2021-01-29 23:57:16,872 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2021-01-29 23:57:16,872 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2021-01-29 23:57:16,872 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2021-01-29 23:57:16,883 [INFO] DbBoardsJson:85 - JSON generation date=Wed Jan 20 09:08:10 CET 2021 (1611130090)
+2021-01-29 23:57:16,889 [INFO] DbBoards:118 - Found 158 boards (155 are supported by CubeMX)
+2021-01-29 23:57:16,889 [WARN] DbBoards:128 - board B-L462E-CELL1 has no document id list !
+2021-01-29 23:57:16,889 [WARN] DbBoards:128 - board B-L475E-IOT01A2 has no document id list !
+2021-01-29 23:57:16,891 [WARN] DbBoards:128 - board NUCLEO-G0B1RE has no document id list !
+2021-01-29 23:57:16,891 [WARN] DbBoards:128 - board NUCLEO-G491RE has no document id list !
+2021-01-29 23:57:16,891 [WARN] DbBoards:128 - board NUCLEO-H743ZI2 has no document id list !
+2021-01-29 23:57:16,891 [WARN] DbBoards:128 - board NUCLEO-L4A6ZG has no document id list !
+2021-01-29 23:57:16,892 [WARN] DbBoards:128 - board NUCLEO-WB55RG has no document id list !
+2021-01-29 23:57:16,892 [WARN] DbBoards:128 - board NUCLEO-WL55JC1 has no document id list !
+2021-01-29 23:57:16,892 [WARN] DbBoards:128 - board NUCLEO-WL55JC2 has no document id list !
+2021-01-29 23:57:16,892 [WARN] DbBoards:128 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2021-01-29 23:57:16,892 [WARN] DbBoards:128 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2021-01-29 23:57:16,892 [WARN] DbBoards:128 - board STEVAL-BFA001V1B has no document id list !
+2021-01-29 23:57:16,892 [WARN] DbBoards:128 - board STEVAL-BFA001V2B has no document id list !
+2021-01-29 23:57:16,892 [WARN] DbBoards:128 - board STEVAL-IDP005V1 has no document id list !
+2021-01-29 23:57:16,892 [WARN] DbBoards:128 - board STEVAL-IDP005V2 has no document id list !
+2021-01-29 23:57:16,892 [WARN] DbBoards:128 - board STEVAL-MKSBOX1V1 has no document id list !
+2021-01-29 23:57:16,892 [WARN] DbBoards:128 - board STEVAL-STWINKT1 has no document id list !
+2021-01-29 23:57:16,892 [WARN] DbBoards:128 - board STM32F401C-DISCO has no document id list !
+2021-01-29 23:57:16,893 [WARN] DbBoards:128 - board STM32F769I-DISC1 has no document id list !
+2021-01-29 23:57:16,893 [WARN] DbBoards:128 - board STM32G0C1E-EV has no document id list !
+2021-01-29 23:57:16,893 [WARN] DbBoards:128 - board STM32G474E-EVAL1 has no document id list !
+2021-01-29 23:57:16,893 [WARN] DbBoards:128 - board STM32H743I-EVAL2 has no document id list !
+2021-01-29 23:57:16,893 [WARN] DbBoards:128 - board STM32H747I-DISC1 has no document id list !
+2021-01-29 23:57:16,893 [WARN] DbBoards:128 - board STM32H753I-EVAL2 has no document id list !
+2021-01-29 23:57:16,894 [WARN] DbBoards:128 - board STM32L-DISCOVERY has no document id list !
+2021-01-29 23:57:16,894 [WARN] DbBoards:128 - board STM32MP157A-DK1 has no document id list !
+2021-01-29 23:57:16,894 [WARN] DbBoards:128 - board STM32MP157F-DK2 has no document id list !
+2021-01-29 23:57:16,894 [WARN] DbBoards:128 - board STM32MP157F-EV1 has no document id list !
+2021-01-29 23:57:18,810 [INFO] ApiDb:238 - Load user favorites file C:\Users\grad_/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2021-01-29 23:57:18,810 [INFO] ApiDb:242 - User favorites Boards=[]
+2021-01-29 23:57:18,810 [INFO] DbBoards:207 - Set 0 / 0 favorites Boards
+2021-01-29 23:57:18,981 [INFO] ApiDb:466 - Connected to CubeFinder SQLite database (C:\Users\grad_\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2021-01-29 23:57:19,574 [INFO] DbExamplesSqlite:410 - Ignored 24 examples not supported by CubeIDE
+2021-01-29 23:57:19,574 [INFO] DbExamplesSqlite:411 - Found 4822 examples active
+2021-01-29 23:57:19,574 [INFO] DbExamplesSqlite:412 - Found 130 examples obsolete
+2021-01-29 23:57:19,574 [INFO] DbExamplesSqlite:413 - Found 0 examples under development
+2021-01-29 23:57:19,574 [INFO] DbExamplesSqlite:414 - Found 71 examples not building
+2021-01-29 23:57:19,594 [INFO] DbExamplesSqlite:106 - CubeFinder database Data Model version=2.1
+2021-01-29 23:57:19,594 [INFO] DbExamplesSqlite:107 - CubeFinder database Configuration version=2.11
+2021-01-29 23:57:19,595 [INFO] DbExamplesSqlite:108 - CubeFinder database generation date=2020-11-16 (1605534434)
+2021-01-29 23:57:19,595 [INFO] DbExamplesSqlite:109 - CubeFinder database FW Pack versions=[STM32Cube_FW_F4_V1.25.2, STM32Cube_FW_F7_V1.16.0, STM32Cube_FW_G0_V1.4.0, STM32Cube_FW_G4_V1.3.0, STM32Cube_FW_H7_V1.8.0, STM32Cube_FW_L5_V1.3.1, STM32Cube_FW_WB_V1.10.0, STM32Cube_FW_WL_V1.0.0]
+2021-01-29 23:57:19,595 [INFO] DbExamples:126 - Found 4869 examples
+2021-01-29 23:57:20,142 [ERROR] DbExamples:202 - Found 297 examples with invalid data (board or MCU)
+2021-01-29 23:57:20,142 [INFO] DbExamples:218 - Found 59 boards with related examples
+2021-01-29 23:57:20,154 [INFO] DbExamples:231 - Found 47 MCUs with related examples
+2021-01-29 23:57:20,167 [INFO] ApiDb:229 - User favorites file not found: C:\Users\grad_/.stm32cubeide/favorites.examples.txt
+2021-01-29 23:57:20,167 [INFO] DbExamples:252 - Set 0 / 0 favorites Examples
+2021-01-29 23:57:20,327 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\grad_\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2021-01-29 23:57:20,328 [INFO] MultiScanPanel:198 - Auto-refresh data requested => check proxy status ongoing
+2021-01-29 23:57:20,328 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2021-01-29 23:57:20,587 [INFO] DetailPanel:344 - Set advertising image to C:/Users/grad_/STM32Cube/Repository/\stm32cubemx-promo_image.jpg
+2021-01-29 23:57:20,846 [INFO] McuFilterPanel:245 - Update 0 favorites MCUs
+2021-01-29 23:59:25,781 [INFO] MainUpdater:2644 - connection check result : 10
+2021-01-29 23:59:25,781 [INFO] MainUpdater:2644 - connection check result : 10
+2021-01-29 23:59:26,116 [INFO] MicroXplorer:385 - Change Database Path : 
+2021-01-29 23:59:26,116 [INFO] MicroXplorer:415 - Change Database Version : DB.6.0.10
+2021-01-29 23:59:26,117 [WARN] ThirdParty:783 - waiting for thirdparty lock release [close project]
+2021-01-29 23:59:26,117 [INFO] ThirdParty:785 - entering critical section [close project]
+2021-01-29 23:59:26,117 [INFO] ThirdParty:796 - exiting critical section [close project]
+2021-01-29 23:59:26,118 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2021-01-29 23:59:26,120 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 573167600 Bytes (1073741824)
+2021-01-29 23:59:26,120 [INFO] MicroXplorer:385 - Change Database Path : 
+2021-01-29 23:59:26,120 [INFO] MicroXplorer:415 - Change Database Version : DB.6.0.10
+2021-01-29 23:59:26,120 [INFO] OpenFileManager:274 - Change cursor
+2021-01-29 23:59:26,121 [WARN] ThirdParty:204 - Use empty third party IP manager
+2021-01-29 23:59:27,179 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.ThirdPartyNb) in loaded IOC file
+2021-01-29 23:59:27,179 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.PinsNb) in loaded IOC file
+2021-01-29 23:59:27,179 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.IPNb) in loaded IOC file
+2021-01-29 23:59:27,198 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.1: no header file found
+2021-01-29 23:59:27,198 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.1: no header file found
+2021-01-29 23:59:27,198 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.1: no header file found
+2021-01-29 23:59:27,199 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,199 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,199 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,199 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,199 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,199 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,200 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,200 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,200 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,200 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,200 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,200 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,200 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,201 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,201 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,201 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,201 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,201 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,201 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,201 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,201 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,202 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,202 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,202 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,202 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,202 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,202 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,202 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,202 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,202 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,202 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,202 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,202 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,203 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,203 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,203 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,203 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,203 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-01-29 23:59:27,204 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2021-01-29 23:59:27,204 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2021-01-29 23:59:27,204 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2021-01-29 23:59:27,271 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-01-29 23:59:27,271 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-01-29 23:59:27,271 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-01-29 23:59:27,275 [WARN] ApiManager:294 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2021-01-29 23:59:27,275 [WARN] ApiManager:294 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2021-01-29 23:59:27,277 [INFO] RtosManager:464 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2021-01-29 23:59:27,277 [INFO] RtosManager:464 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2021-01-29 23:59:27,277 [INFO] RtosManager:464 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2021-01-29 23:59:27,277 [INFO] RtosManager:464 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2021-01-29 23:59:27,277 [WARN] ModelIntegratedComponent:182 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2021-01-29 23:59:27,278 [WARN] ModelIntegratedComponent:180 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Audio HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,278 [WARN] ModelIntegratedComponent:186 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Audio HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,278 [WARN] ModelIntegratedComponent:180 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:CDC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,279 [WARN] ModelIntegratedComponent:186 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:CDC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,279 [WARN] ModelIntegratedComponent:180 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:DFU HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,279 [WARN] ModelIntegratedComponent:186 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:DFU HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,279 [WARN] ModelIntegratedComponent:180 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,279 [WARN] ModelIntegratedComponent:186 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,279 [WARN] ModelIntegratedComponent:180 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Custom HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,280 [WARN] ModelIntegratedComponent:186 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Custom HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,280 [WARN] ModelIntegratedComponent:180 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:MSC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,280 [WARN] ModelIntegratedComponent:186 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:MSC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,281 [WARN] ApiManager:294 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2021-01-29 23:59:27,282 [WARN] ApiManager:294 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2021-01-29 23:59:27,282 [WARN] ApiManager:294 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2021-01-29 23:59:27,282 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.1.0: no header file found
+2021-01-29 23:59:27,283 [WARN] ModelIntegratedComponent:180 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:Audio HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,283 [WARN] ModelIntegratedComponent:186 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:Audio HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,283 [WARN] ModelIntegratedComponent:180 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:CDC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,283 [WARN] ModelIntegratedComponent:186 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:CDC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,283 [WARN] ModelIntegratedComponent:180 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MSC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,283 [WARN] ModelIntegratedComponent:186 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MSC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,283 [WARN] ModelIntegratedComponent:180 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:HID HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,283 [WARN] ModelIntegratedComponent:186 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:HID HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,283 [WARN] ModelIntegratedComponent:180 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MTP HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,283 [WARN] ModelIntegratedComponent:186 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MTP HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-01-29 23:59:27,284 [WARN] ApiManager:294 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.1: no header file found
+2021-01-29 23:59:27,285 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.1.0: no header file found
+2021-01-29 23:59:27,547 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 575410248 Bytes (1073741824)
+2021-01-29 23:59:27,548 [WARN] ThirdParty:749 - waiting for thirdparty lock release [change project]
+2021-01-29 23:59:27,548 [INFO] ThirdParty:751 - entering critical section [change project]
+2021-01-29 23:59:27,548 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2021-01-29 23:59:27,548 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 3.0.1
+2021-01-29 23:59:27,548 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2021-01-29 23:59:27,548 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 2.0.0
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.2.0
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.0.0
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 1.0.0
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.1.0
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.1.0
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.1.0
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.1
+2021-01-29 23:59:27,549 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 5.2.0
+2021-01-29 23:59:27,550 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2021-01-29 23:59:27,550 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.0
+2021-01-29 23:59:27,550 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2021-01-29 23:59:27,550 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.1.0
+2021-01-29 23:59:27,550 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2021-01-29 23:59:27,550 [INFO] ThirdParty:757 - exiting critical section [change project]
+2021-01-29 23:59:27,616 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2021-01-29 23:59:27,617 [INFO] PinOutPanel:1434 - setPackage(STM32F411CEUx,UFQFPN48)
+2021-01-29 23:59:27,776 [INFO] UtilMem:74 - Before build in PCC Used Memory: 626041768 Bytes (1073741824)
+2021-01-29 23:59:27,976 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/grad_/.stm32cubemx/plugins/power
+2021-01-29 23:59:28,001 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/grad_/.stm32cubemx/plugins/power
+2021-01-29 23:59:28,015 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/grad_/.stm32cubemx/plugins/power
+2021-01-29 23:59:28,016 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/grad_/.stm32cubemx/plugins/power
+2021-01-29 23:59:28,053 [INFO] UtilMem:74 - After build in PCC Used Memory: 668194736 Bytes (1073741824)
+2021-01-29 23:59:28,061 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,062 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,062 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,062 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,062 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,062 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,063 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,063 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,063 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,063 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,063 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,063 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,063 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,064 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,064 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,064 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,064 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,065 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,065 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,065 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,066 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,066 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,066 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,066 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,066 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,067 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,067 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,067 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,067 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,068 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,068 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,068 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,068 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,069 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,069 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,069 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,069 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,070 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,070 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,070 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,071 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,071 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,071 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-01-29 23:59:28,080 [INFO] ApiDbMcu:456 - Load IP Config File for PDM2PCM
+2021-01-29 23:59:28,093 [INFO] OpenFileManager:294 - Restore cursor
+2021-01-29 23:59:28,285 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 710664104 Bytes (1073741824)
+2021-01-29 23:59:28,359 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 718526384 Bytes (1073741824)
+2021-01-29 23:59:28,531 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-01-29 23:59:28,531 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-01-29 23:59:28,531 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-01-29 23:59:28,531 [INFO] CodeGenerator:639 - code generatio: config db path: D:\STM32\PROGRAMS\STM32_Cube_IDE\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-01-29 23:59:28,684 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\license.tmp_save
+2021-01-29 23:59:28,724 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\license.tmp
+2021-01-29 23:59:28,762 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_it.c_save
+2021-01-29 23:59:28,809 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_it.c
+2021-01-29 23:59:28,812 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_it.h_save
+2021-01-29 23:59:28,853 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_it.h
+2021-01-29 23:59:28,861 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_hal_msp.c_save
+2021-01-29 23:59:28,918 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_hal_msp.c
+2021-01-29 23:59:28,921 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\system.tmp_save
+2021-01-29 23:59:28,959 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\system.tmp
+2021-01-29 23:59:28,965 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-01-29 23:59:29,015 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_hal_conf.h
+2021-01-29 23:59:29,125 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\main.h_save
+2021-01-29 23:59:29,269 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\main.h
+2021-01-29 23:59:29,272 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\main.c_save
+2021-01-29 23:59:29,329 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\main.c
+2021-01-29 23:59:30,457 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 658mS.
+2021-01-29 23:59:30,462 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-01-29 23:59:30,664 [INFO] ConfigFileManager:1238 - The Die is : DIE431
+2021-01-29 23:59:30,674 [INFO] ApiDbMcu:456 - Load IP Config File for FATFS
+2021-01-29 23:59:30,704 [INFO] ApiDbMcu:456 - Load IP Config File for FREERTOS
+2021-01-29 23:59:30,709 [INFO] ApiDbMcu:456 - Load IP Config File for LIBJPEG
+2021-01-29 23:59:30,756 [INFO] ApiDbMcu:456 - Load IP Config File for MBEDTLS
+2021-01-29 23:59:30,795 [INFO] ApiDbMcu:456 - Load IP Config File for USB_DEVICE
+2021-01-29 23:59:30,806 [INFO] ApiDbMcu:456 - Load IP Config File for USB_HOST
+2021-01-29 23:59:33,729 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 3267mS.
+2021-01-29 23:59:33,729 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-29 23:59:33,730 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-29 23:59:34,440 [INFO] ApiDb:263 - Save user favorites file C:\Users\grad_/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2021-01-29 23:59:34,440 [INFO] ApiDb:267 - User favorites MCUs=[]
+2021-01-30 00:04:57,644 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 593874064 Bytes (1073741824)
+2021-01-30 00:04:58,947 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 610651160 Bytes (1073741824)
+2021-01-30 00:05:00,652 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 705338032 Bytes (1073741824)
+2021-01-30 00:05:00,935 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-01-30 00:05:00,935 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-01-30 00:05:00,935 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-01-30 00:05:00,935 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-01-30 00:05:00,936 [INFO] CodeGenerator:639 - code generatio: config db path: D:\STM32\PROGRAMS\STM32_Cube_IDE\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-01-30 00:05:01,136 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\license.tmp_save
+2021-01-30 00:05:01,185 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\license.tmp
+2021-01-30 00:05:01,214 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\gpio.tmp_save
+2021-01-30 00:05:01,257 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\gpio.tmp
+2021-01-30 00:05:01,270 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_it.c_save
+2021-01-30 00:05:01,332 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_it.c
+2021-01-30 00:05:01,335 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_it.h_save
+2021-01-30 00:05:01,383 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_it.h
+2021-01-30 00:05:01,389 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_hal_msp.c_save
+2021-01-30 00:05:01,457 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_hal_msp.c
+2021-01-30 00:05:01,460 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\system.tmp_save
+2021-01-30 00:05:01,499 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\system.tmp
+2021-01-30 00:05:01,505 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-01-30 00:05:01,561 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_hal_conf.h
+2021-01-30 00:05:01,586 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\main.h_save
+2021-01-30 00:05:01,639 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\main.h
+2021-01-30 00:05:01,642 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\main.c_save
+2021-01-30 00:05:01,795 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\main.c
+2021-01-30 00:05:02,233 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 83mS.
+2021-01-30 00:05:02,235 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-01-30 00:05:02,869 [INFO] ConfigFileManager:1238 - The Die is : DIE431
+2021-01-30 00:05:05,572 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 3337mS.
+2021-01-30 00:05:05,572 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-30 00:05:05,573 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-30 00:13:59,033 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,642x360,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-01-30 00:14:01,448 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-01-30 00:14:32,055 [INFO] DmaTabbedPanel:192 - Cannot restore the selected Tab for DMA
+2021-01-30 00:15:54,841 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 877949216 Bytes (1073741824)
+2021-01-30 00:17:49,466 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 522284320 Bytes (1073741824)
+2021-01-30 00:17:49,848 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-01-30 00:17:49,848 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-01-30 00:17:49,848 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: DMA
+2021-01-30 00:17:49,848 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-01-30 00:17:49,848 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-01-30 00:17:49,849 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-01-30 00:17:49,849 [INFO] CodeGenerator:639 - code generatio: config db path: D:\STM32\PROGRAMS\STM32_Cube_IDE\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-01-30 00:17:50,018 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\license.tmp_save
+2021-01-30 00:17:50,057 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\license.tmp
+2021-01-30 00:17:50,071 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\gpio.tmp_save
+2021-01-30 00:17:50,121 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\gpio.tmp
+2021-01-30 00:17:50,194 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-30 00:17:50,218 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\dma.tmp_save
+2021-01-30 00:17:50,262 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\dma.tmp
+2021-01-30 00:17:50,264 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\dma_GV.tmp_save
+2021-01-30 00:17:50,304 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\dma_GV.tmp
+2021-01-30 00:17:50,305 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-30 00:17:50,313 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_it.c_save
+2021-01-30 00:17:50,376 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_it.c
+2021-01-30 00:17:50,379 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_it.h_save
+2021-01-30 00:17:50,425 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_it.h
+2021-01-30 00:17:50,432 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_hal_msp.c_save
+2021-01-30 00:17:50,604 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_hal_msp.c
+2021-01-30 00:17:50,606 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\system.tmp_save
+2021-01-30 00:17:50,644 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\system.tmp
+2021-01-30 00:17:50,650 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-01-30 00:17:50,701 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_hal_conf.h
+2021-01-30 00:17:50,726 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\main.h_save
+2021-01-30 00:17:50,770 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\main.h
+2021-01-30 00:17:50,775 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\main.c_save
+2021-01-30 00:17:50,843 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\main.c
+2021-01-30 00:17:51,567 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 154mS.
+2021-01-30 00:17:51,569 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-01-30 00:17:51,849 [INFO] ConfigFileManager:1238 - The Die is : DIE431
+2021-01-30 00:17:53,190 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1621mS.
+2021-01-30 00:17:53,190 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-30 00:17:53,192 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 1mS.
+2021-01-30 00:24:23,425 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,642x360,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-01-30 00:25:02,155 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 505645648 Bytes (1073741824)
+2021-01-30 00:25:03,612 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 519277136 Bytes (1073741824)
+2021-01-30 00:25:08,401 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 639863376 Bytes (1073741824)
+2021-01-30 00:25:08,684 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-01-30 00:25:08,684 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-01-30 00:25:08,684 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: DMA
+2021-01-30 00:25:08,684 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-01-30 00:25:08,685 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-01-30 00:25:08,685 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-01-30 00:25:08,685 [INFO] CodeGenerator:639 - code generatio: config db path: D:\STM32\PROGRAMS\STM32_Cube_IDE\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-01-30 00:25:08,696 [INFO] Argument:278 - Argument : hdmavalue: null
+2021-01-30 00:25:08,696 [INFO] Argument:280 - 	 sub Args: 
+2021-01-30 00:25:08,696 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Stream5
+2021-01-30 00:25:08,696 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Stream5
+2021-01-30 00:25:08,696 [INFO] Argument:278 - Argument : Initvalue: null
+2021-01-30 00:25:08,697 [INFO] Argument:280 - 	 sub Args: 
+2021-01-30 00:25:08,697 [INFO] Argument:278 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-01-30 00:25:08,697 [INFO] Argument:288 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-01-30 00:25:08,697 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-01-30 00:25:08,697 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-01-30 00:25:08,697 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-01-30 00:25:08,697 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-01-30 00:25:08,697 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-01-30 00:25:08,697 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-01-30 00:25:08,697 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-01-30 00:25:08,697 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-01-30 00:25:08,697 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-01-30 00:25:08,697 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-01-30 00:25:08,697 [INFO] Argument:278 - Argument : Modevalue: DMA_NORMAL
+2021-01-30 00:25:08,697 [INFO] Argument:288 - Argument : Modevalue: DMA_NORMAL
+2021-01-30 00:25:08,697 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-01-30 00:25:08,697 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-01-30 00:25:08,697 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-01-30 00:25:08,698 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-01-30 00:25:08,698 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:278 - Argument : Lockvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:288 - Argument : Lockvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:278 - Argument : Statevalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:288 - Argument : Statevalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:278 - Argument : Parentvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:288 - Argument : Parentvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2021-01-30 00:25:08,698 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2021-01-30 00:25:08,699 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2021-01-30 00:25:08,699 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2021-01-30 00:25:08,699 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2021-01-30 00:25:08,699 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2021-01-30 00:25:08,699 [INFO] Argument:278 - Argument : hdmavalue: null
+2021-01-30 00:25:08,699 [INFO] Argument:280 - 	 sub Args: 
+2021-01-30 00:25:08,699 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Stream6
+2021-01-30 00:25:08,699 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Stream6
+2021-01-30 00:25:08,699 [INFO] Argument:278 - Argument : Initvalue: null
+2021-01-30 00:25:08,699 [INFO] Argument:280 - 	 sub Args: 
+2021-01-30 00:25:08,700 [INFO] Argument:278 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-01-30 00:25:08,700 [INFO] Argument:288 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-01-30 00:25:08,700 [INFO] Argument:278 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-01-30 00:25:08,700 [INFO] Argument:288 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-01-30 00:25:08,700 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-01-30 00:25:08,700 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-01-30 00:25:08,700 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-01-30 00:25:08,700 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-01-30 00:25:08,700 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-01-30 00:25:08,700 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-01-30 00:25:08,700 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-01-30 00:25:08,700 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-01-30 00:25:08,700 [INFO] Argument:278 - Argument : Modevalue: DMA_NORMAL
+2021-01-30 00:25:08,700 [INFO] Argument:288 - Argument : Modevalue: DMA_NORMAL
+2021-01-30 00:25:08,700 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-01-30 00:25:08,700 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-01-30 00:25:08,700 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-01-30 00:25:08,700 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-01-30 00:25:08,701 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2021-01-30 00:25:08,701 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2021-01-30 00:25:08,701 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2021-01-30 00:25:08,701 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2021-01-30 00:25:08,701 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2021-01-30 00:25:08,701 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2021-01-30 00:25:08,701 [INFO] Argument:278 - Argument : Lockvalue: null
+2021-01-30 00:25:08,701 [INFO] Argument:288 - Argument : Lockvalue: null
+2021-01-30 00:25:08,701 [INFO] Argument:278 - Argument : Statevalue: null
+2021-01-30 00:25:08,701 [INFO] Argument:288 - Argument : Statevalue: null
+2021-01-30 00:25:08,701 [INFO] Argument:278 - Argument : Parentvalue: null
+2021-01-30 00:25:08,701 [INFO] Argument:288 - Argument : Parentvalue: null
+2021-01-30 00:25:08,701 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2021-01-30 00:25:08,701 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2021-01-30 00:25:08,702 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2021-01-30 00:25:08,702 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2021-01-30 00:25:08,702 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2021-01-30 00:25:08,702 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2021-01-30 00:25:08,702 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2021-01-30 00:25:08,702 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2021-01-30 00:25:08,702 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2021-01-30 00:25:08,702 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2021-01-30 00:25:08,868 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\license.tmp_save
+2021-01-30 00:25:08,907 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\license.tmp
+2021-01-30 00:25:08,931 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\gpio.tmp_save
+2021-01-30 00:25:08,976 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\gpio.tmp
+2021-01-30 00:25:09,047 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-30 00:25:09,071 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\dma.tmp_save
+2021-01-30 00:25:09,115 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\dma.tmp
+2021-01-30 00:25:09,117 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\dma_GV.tmp_save
+2021-01-30 00:25:09,160 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\dma_GV.tmp
+2021-01-30 00:25:09,161 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-30 00:25:09,168 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_it.c_save
+2021-01-30 00:25:09,233 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_it.c
+2021-01-30 00:25:09,237 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_it.h_save
+2021-01-30 00:25:09,288 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_it.h
+2021-01-30 00:25:09,295 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_hal_msp.c_save
+2021-01-30 00:25:09,371 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_hal_msp.c
+2021-01-30 00:25:09,374 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\system.tmp_save
+2021-01-30 00:25:09,422 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\system.tmp
+2021-01-30 00:25:09,428 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-01-30 00:25:09,574 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_hal_conf.h
+2021-01-30 00:25:09,598 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\main.h_save
+2021-01-30 00:25:09,648 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\main.h
+2021-01-30 00:25:09,651 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\main.c_save
+2021-01-30 00:25:09,720 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\main.c
+2021-01-30 00:25:10,448 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 80mS.
+2021-01-30 00:25:10,451 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-01-30 00:25:10,714 [INFO] ConfigFileManager:1238 - The Die is : DIE431
+2021-01-30 00:25:12,173 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1722mS.
+2021-01-30 00:25:12,174 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 1mS.
+2021-01-30 00:25:12,175 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-30 00:26:24,339 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 622279248 Bytes (1073741824)
+2021-01-30 00:26:25,851 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 636959312 Bytes (1073741824)
+2021-01-30 00:26:26,812 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 739197512 Bytes (1073741824)
+2021-01-30 00:26:27,082 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-01-30 00:26:27,082 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-01-30 00:26:27,082 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: DMA
+2021-01-30 00:26:27,082 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-01-30 00:26:27,083 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-01-30 00:26:27,083 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-01-30 00:26:27,083 [INFO] CodeGenerator:639 - code generatio: config db path: D:\STM32\PROGRAMS\STM32_Cube_IDE\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-01-30 00:26:27,093 [INFO] Argument:278 - Argument : hdmavalue: null
+2021-01-30 00:26:27,093 [INFO] Argument:280 - 	 sub Args: 
+2021-01-30 00:26:27,093 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Stream5
+2021-01-30 00:26:27,093 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Stream5
+2021-01-30 00:26:27,093 [INFO] Argument:278 - Argument : Initvalue: null
+2021-01-30 00:26:27,093 [INFO] Argument:280 - 	 sub Args: 
+2021-01-30 00:26:27,094 [INFO] Argument:278 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-01-30 00:26:27,094 [INFO] Argument:288 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-01-30 00:26:27,094 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-01-30 00:26:27,094 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-01-30 00:26:27,094 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-01-30 00:26:27,094 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-01-30 00:26:27,094 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-01-30 00:26:27,094 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-01-30 00:26:27,094 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-01-30 00:26:27,094 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-01-30 00:26:27,094 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-01-30 00:26:27,094 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-01-30 00:26:27,094 [INFO] Argument:278 - Argument : Modevalue: DMA_NORMAL
+2021-01-30 00:26:27,095 [INFO] Argument:288 - Argument : Modevalue: DMA_NORMAL
+2021-01-30 00:26:27,095 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-01-30 00:26:27,095 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-01-30 00:26:27,095 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-01-30 00:26:27,095 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-01-30 00:26:27,097 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2021-01-30 00:26:27,097 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2021-01-30 00:26:27,097 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2021-01-30 00:26:27,097 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2021-01-30 00:26:27,097 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2021-01-30 00:26:27,097 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2021-01-30 00:26:27,097 [INFO] Argument:278 - Argument : Lockvalue: null
+2021-01-30 00:26:27,097 [INFO] Argument:288 - Argument : Lockvalue: null
+2021-01-30 00:26:27,097 [INFO] Argument:278 - Argument : Statevalue: null
+2021-01-30 00:26:27,097 [INFO] Argument:288 - Argument : Statevalue: null
+2021-01-30 00:26:27,098 [INFO] Argument:278 - Argument : Parentvalue: null
+2021-01-30 00:26:27,098 [INFO] Argument:288 - Argument : Parentvalue: null
+2021-01-30 00:26:27,098 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2021-01-30 00:26:27,098 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2021-01-30 00:26:27,098 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2021-01-30 00:26:27,098 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2021-01-30 00:26:27,098 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2021-01-30 00:26:27,098 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2021-01-30 00:26:27,098 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2021-01-30 00:26:27,098 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2021-01-30 00:26:27,098 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2021-01-30 00:26:27,098 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2021-01-30 00:26:27,099 [INFO] Argument:278 - Argument : hdmavalue: null
+2021-01-30 00:26:27,099 [INFO] Argument:280 - 	 sub Args: 
+2021-01-30 00:26:27,099 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Stream6
+2021-01-30 00:26:27,099 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Stream6
+2021-01-30 00:26:27,099 [INFO] Argument:278 - Argument : Initvalue: null
+2021-01-30 00:26:27,099 [INFO] Argument:280 - 	 sub Args: 
+2021-01-30 00:26:27,099 [INFO] Argument:278 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-01-30 00:26:27,099 [INFO] Argument:288 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-01-30 00:26:27,099 [INFO] Argument:278 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-01-30 00:26:27,100 [INFO] Argument:288 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-01-30 00:26:27,100 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-01-30 00:26:27,100 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-01-30 00:26:27,100 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-01-30 00:26:27,100 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-01-30 00:26:27,100 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-01-30 00:26:27,100 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-01-30 00:26:27,100 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-01-30 00:26:27,100 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-01-30 00:26:27,100 [INFO] Argument:278 - Argument : Modevalue: DMA_NORMAL
+2021-01-30 00:26:27,100 [INFO] Argument:288 - Argument : Modevalue: DMA_NORMAL
+2021-01-30 00:26:27,100 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-01-30 00:26:27,100 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-01-30 00:26:27,100 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-01-30 00:26:27,100 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-01-30 00:26:27,100 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2021-01-30 00:26:27,100 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2021-01-30 00:26:27,100 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2021-01-30 00:26:27,100 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2021-01-30 00:26:27,100 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:278 - Argument : Lockvalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:288 - Argument : Lockvalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:278 - Argument : Statevalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:288 - Argument : Statevalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:278 - Argument : Parentvalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:288 - Argument : Parentvalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2021-01-30 00:26:27,101 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2021-01-30 00:26:27,279 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\license.tmp_save
+2021-01-30 00:26:27,321 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\license.tmp
+2021-01-30 00:26:27,342 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\gpio.c_save
+2021-01-30 00:26:27,390 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\gpio.c
+2021-01-30 00:26:27,393 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\gpio.h_save
+2021-01-30 00:26:27,438 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\gpio.h
+2021-01-30 00:26:27,506 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-30 00:26:27,533 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\dma.c_save
+2021-01-30 00:26:27,585 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\dma.c
+2021-01-30 00:26:27,588 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\dma.h_save
+2021-01-30 00:26:27,639 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\dma.h
+2021-01-30 00:26:27,640 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-30 00:26:27,647 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\usart.c_save
+2021-01-30 00:26:27,709 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\usart.c
+2021-01-30 00:26:27,712 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\usart.h_save
+2021-01-30 00:26:27,757 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\usart.h
+2021-01-30 00:26:27,765 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_it.c_save
+2021-01-30 00:26:27,827 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_it.c
+2021-01-30 00:26:27,832 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_it.h_save
+2021-01-30 00:26:27,962 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_it.h
+2021-01-30 00:26:27,968 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_hal_msp.c_save
+2021-01-30 00:26:28,032 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\stm32f4xx_hal_msp.c
+2021-01-30 00:26:28,035 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\system.tmp_save
+2021-01-30 00:26:28,080 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\MXTmpFiles\system.tmp
+2021-01-30 00:26:28,086 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-01-30 00:26:28,137 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\stm32f4xx_hal_conf.h
+2021-01-30 00:26:28,164 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\main.h_save
+2021-01-30 00:26:28,214 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Inc\main.h
+2021-01-30 00:26:28,217 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\main.c_save
+2021-01-30 00:26:28,281 [INFO] CodeEngine:247 - Generated code: D:\STM32\STM32MARS\STMars_modular_robot_vbp\Core\Src\main.c
+2021-01-30 00:26:28,943 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 68mS.
+2021-01-30 00:26:28,945 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-01-30 00:26:29,197 [INFO] ConfigFileManager:1238 - The Die is : DIE431
+2021-01-30 00:26:31,250 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 2305mS.
+2021-01-30 00:26:31,251 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-30 00:26:31,252 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.

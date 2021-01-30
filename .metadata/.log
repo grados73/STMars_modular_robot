@@ -160,3 +160,18 @@ Project's 'STMars_modular_robot_v1.0' active one is 'STMars_modular_robot_v1.0.i
 !MESSAGE Invalid Input: Must be project's active .ioc file.
 
 Project's 'STMars_modular_robot_v1.0' active one is 'STMars_modular_robot_v1.0.ioc' file
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-01-29 23:59:36.235
+!MESSAGE Indexed 'STMars_modular_robot_vbp' (21 sources, 80 headers) in 2.51 sec: 4,227 declarations; 17,777 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0091%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-01-30 00:09:32.434
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 27 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-01-30 00:09:32.436
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-01-30 00:09:32.437
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 27 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-01-30 00:09:32.438
+!MESSAGE Existing sessions are:
