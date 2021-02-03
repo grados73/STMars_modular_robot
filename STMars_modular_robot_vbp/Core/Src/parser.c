@@ -17,6 +17,7 @@
 extern UARTDMA_HandleTypeDef huartdma2;
 char Message[64]; // Transmit buffer
 char MyName[32] = {"No Name"}; // Name string
+MOTION_STATE MotorRegulator;
 
 
 
@@ -50,11 +51,6 @@ void UART_ParseLine(UARTDMA_HandleTypeDef *huartdma)
 	  {
 		  UART_ParseMotor();
 	  }
-	  else if(strcmp(ParsePointer, "NAME") == 0)
-	  {
-		  UART_ParseNAME();
-	  }
-
 	}
 }
 
@@ -130,13 +126,6 @@ void UART_ParseMotor()
 	}
 
 
-	if(MotorParameters[0] == MotorParameters[1] == 0) // if we dont turn in to any side
-	{
-
-	}
-
-
-
 	// Print back received data
 	sprintf(Message, "Left Motor: %d\r\n", MotorParameters[0]);
 	UARTDMA_Print(&huartdma2, Message);
@@ -146,37 +135,40 @@ void UART_ParseMotor()
 
 	sprintf(Message, "Direction: %d\r\n", MotorParameters[2]);
 	UARTDMA_Print(&huartdma2, Message);
+
+	switch(MotorRegulator){
+	case IDLE:
+		ParseIdleRoutine();
+		break;
+	case CONSTGO9:
+
+		break;
+	case CONSTGO6:
+
+		break;
+	case CONSTBACK13:
+
+		break;
+	case CONSTBACK16:
+
+		break;
+	case GOANDTURNINGLEFT:
+
+		break;
+	case GOANDTURNINGRIGHT:
+
+		break;
+	case TURNINGLEFT:
+
+		break;
+	case 	TURNINGRIGHT:
+
+		break;
+	default:
+		break;
+
+	}
+
+
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////// CHANGING NAME OF MODUL ////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*
- * 		NAME=X\n	// Change name for X
- * 		NAME=?\n	// introduce yourself
- */
-void UART_ParseNAME()
-{
-	char* ParsePointer = strtok(NULL, ","); // Get next string till token ',' or \0
-
-	if(strlen(ParsePointer) > 0) // If string exists
-	{
-		if(strcmp(ParsePointer, "?") == 0) // If '?' is behind '='
-		{
-			sprintf(Message, "My name is %s\r\n", MyName); // Introduce yourself
-		}
-		else
-		{
-			strcpy(MyName, ParsePointer); // Change name for string passed in received message
-			sprintf(Message, "Name changed to %s\r\n", MyName);
-		}
-	}
-	else
-	{
-		// Error
-		sprintf(Message, "Name cannot be empty!\r\n");
-	}
-
-	// Send back a message
-	UARTDMA_Print(&huartdma2, Message);
-}
