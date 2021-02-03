@@ -60,6 +60,18 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define LD1_Pin GPIO_PIN_13
 #define LD1_GPIO_Port GPIOC
+#define PWMA_L_Motor_Pin GPIO_PIN_1
+#define PWMA_L_Motor_GPIO_Port GPIOA
+#define PWMB_R_Motor_Pin GPIO_PIN_10
+#define PWMB_R_Motor_GPIO_Port GPIOB
+#define AIN1_HBridge_Pin GPIO_PIN_13
+#define AIN1_HBridge_GPIO_Port GPIOB
+#define AIN2_HBridge_Pin GPIO_PIN_14
+#define AIN2_HBridge_GPIO_Port GPIOB
+#define BIN1_HBridge_Pin GPIO_PIN_11
+#define BIN1_HBridge_GPIO_Port GPIOA
+#define BIN2_HBridge_Pin GPIO_PIN_12
+#define BIN2_HBridge_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

@@ -175,7 +175,6 @@ void UART_ParseMotor()
 void IdleRoutine(uint8_t * MotorParameters)
 {
 
-
 }
 
 void ConstGo9Routine(uint8_t * MotorParameters)
