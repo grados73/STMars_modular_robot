@@ -138,31 +138,31 @@ void UART_ParseMotor()
 
 	switch(MotorRegulator){
 	case IDLE:
-		ParseIdleRoutine();
+		IdleRoutine(MotorParameters);
 		break;
 	case CONSTGO9:
-
+		ConstGo9Routine(MotorParameters);
 		break;
 	case CONSTGO6:
-
+		ConstGo6Routine(MotorParameters);
 		break;
 	case CONSTBACK13:
-
+		ConstBack13Routine(MotorParameters);
 		break;
 	case CONSTBACK16:
-
+		Constback16Routine(MotorParameters);
 		break;
 	case GOANDTURNINGLEFT:
-
+		GoAndTurningLeftRoutine(MotorParameters);
 		break;
 	case GOANDTURNINGRIGHT:
-
+		GoAndTurningRightRoutine(MotorParameters);
 		break;
 	case TURNINGLEFT:
-
+		TurningLeftRoutine(MotorParameters);
 		break;
-	case 	TURNINGRIGHT:
-
+	case TURNINGRIGHT:
+		TurningRightRoutine(MotorParameters);
 		break;
 	default:
 		break;
@@ -172,3 +172,48 @@ void UART_ParseMotor()
 
 }
 
+void IdleRoutine(uint8_t * MotorParameters)
+{
+
+
+}
+
+void ConstGo9Routine(uint8_t * MotorParameters)
+{
+
+}
+
+void ConstGo6Routine(uint8_t * MotorParameters)
+{
+
+}
+
+void ConstBack13Routine(uint8_t * MotorParameters)
+{
+
+}
+
+void Constback16Routine(uint8_t * MotorParameters)
+{
+
+}
+
+void GoAndTurningLeftRoutine(uint8_t * MotorParameters)
+{
+
+}
+
+void GoAndTurningRightRoutine(uint8_t * MotorParameters)
+{
+
+}
+
+void TurningLeftRoutine(uint8_t * MotorParameters)
+{
+
+}
+
+void TurningRightRoutine(uint8_t * MotorParameters)
+{
+
+}

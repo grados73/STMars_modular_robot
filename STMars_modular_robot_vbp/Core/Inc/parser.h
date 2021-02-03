@@ -21,10 +21,10 @@ typedef enum
 	CONSTGO6, //2 THE VEHICLE IS GOING FORWARD 9
 	CONSTBACK13, //3 THE VEHICLE IS GOING BACK 13
 	CONSTBACK16, //4 THE VEHICLE IS GOING BACK 16
-	GOANDTURNINGLEFT,
-	GOANDTURNINGRIGHT,
-	TURNINGLEFT,   //3
-	TURNINGRIGHT   //4
+	GOANDTURNINGLEFT, // 5
+	GOANDTURNINGRIGHT, // 6
+	TURNINGLEFT,   //7
+	TURNINGRIGHT   //8
 } MOTION_STATE;
 
 typedef struct motors_struct
@@ -39,6 +39,13 @@ typedef struct motors_struct
 	uint8_t			STBY;
 }HBridge;
 
-void ParseIdleRoutine();
-
+void IdleRoutine(uint8_t * MotorParameters);
+void ConstGo9Routine(uint8_t * MotorParameters);
+void ConstGo6Routine(uint8_t * MotorParameters);
+void ConstBack13Routine(uint8_t * MotorParameters);
+void Constback16Routine(uint8_t * MotorParameters);
+void GoAndTurningLeftRoutine(uint8_t * MotorParameters);
+void GoAndTurningRightRoutine(uint8_t * MotorParameters);
+void TurningLeftRoutine(uint8_t * MotorParameters);
+void TurningRightRoutine(uint8_t * MotorParameters);
 #endif /* INC_PARSER_H_ */
