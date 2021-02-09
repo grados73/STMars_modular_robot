@@ -39,6 +39,8 @@ typedef struct motors_struct
 	uint8_t			STBY;
 }HBridge;
 
+void SwitchMotorRegular();
+
 void IdleRoutine(uint8_t * MotorParameters);
 void ConstGo9Routine(uint8_t * MotorParameters);
 void ConstGo6Routine(uint8_t * MotorParameters);

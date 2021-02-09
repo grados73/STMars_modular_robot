@@ -49,6 +49,11 @@
 /* USER CODE BEGIN PV */
 UARTDMA_HandleTypeDef huartdma2;
 uint8_t BufferReceive[64];
+extern uint8_t MotorParameters[3];
+
+uint32_t CurrentTime = 0;
+uint32_t LastMotorTime = 0;
+uint32_t TimeBetweenMotors = 100;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -75,7 +80,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -115,6 +120,13 @@ int main(void)
 	  // TRANSMIT
 	  //
 	  UARTDMA_TransmitEvent(&huartdma2);
+
+	 CurrentTime = HAL_GetTick();
+	 if(CurrentTime - LastMotorTime >= TimeBetweenMotors)
+	 {
+		 SwitchMotorRegular();
+		 LastMotorTime = CurrentTime;
+	 }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

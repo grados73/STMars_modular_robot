@@ -9,6 +9,7 @@
 #include "uartdma.h"
 #include "stdlib.h"
 #include "stdio.h"
+#include "tim.h"
 
 
 #ifndef INC_MOTION_H_

@@ -24,10 +24,35 @@ void ToggleUserLed(uint8_t State)
 
 void LeftMotorMotion(uint8_t MotorSpeed, uint8_t MotorDirection)
 {
+	if(MotorDirection == 1) // go forward
+	{
+		HAL_GPIO_WritePin(BIN1_HBridge_GPIO_Port, BIN1_HBridge_Pin, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(BIN2_HBridge_GPIO_Port, BIN2_HBridge_Pin, GPIO_PIN_RESET);
+	}
+	else if(MotorDirection == 0) //go back
+	{
+		HAL_GPIO_WritePin(BIN1_HBridge_GPIO_Port, BIN1_HBridge_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(BIN2_HBridge_GPIO_Port, BIN2_HBridge_Pin, GPIO_PIN_SET);
+	}
 
+	if(MotorSpeed > 100) MotorSpeed = 100;
+	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, MotorSpeed);
 }
 
 void RightMotorMotion(uint8_t MotorSpeed, uint8_t MotorDirection)
 {
+	if(MotorDirection == 1) // go forward
+	{
+		HAL_GPIO_WritePin(AIN1_HBridge_GPIO_Port, AIN1_HBridge_Pin, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(AIN2_HBridge_GPIO_Port, AIN2_HBridge_Pin, GPIO_PIN_RESET);
+	}
+	else if(MotorDirection == 0) //go back
+	{
+		HAL_GPIO_WritePin(AIN1_HBridge_GPIO_Port, AIN1_HBridge_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(AIN2_HBridge_GPIO_Port, AIN2_HBridge_Pin, GPIO_PIN_SET);
+	}
+
+	if(MotorSpeed > 100) MotorSpeed = 100;
+	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, MotorSpeed);
 
 }

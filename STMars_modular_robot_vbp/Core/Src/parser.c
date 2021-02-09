@@ -18,7 +18,7 @@ extern UARTDMA_HandleTypeDef huartdma2;
 char Message[64]; // Transmit buffer
 char MyName[32] = {"No Name"}; // Name string
 MOTION_STATE MotorRegulator;
-
+uint8_t MotorParameters[3];	 // Left motor, Right motor, Direction of movement
 
 
 
@@ -104,7 +104,7 @@ void UART_ParseLED()
 void UART_ParseMotor()
 {
 	uint8_t i,j; // Iterators
-	uint8_t MotorParameters[3]; // Left motor, Right motor, Direction of movement
+
 
 	for(i = 0; i<3; i++) // 3 parameters are expected
 	{
@@ -136,6 +136,13 @@ void UART_ParseMotor()
 	sprintf(Message, "Direction: %d\r\n", MotorParameters[2]);
 	UARTDMA_Print(&huartdma2, Message);
 
+	SwitchMotorRegular();
+
+
+}
+
+void SwitchMotorRegular()
+{
 	switch(MotorRegulator){
 	case IDLE:
 		IdleRoutine(MotorParameters);
@@ -168,17 +175,55 @@ void UART_ParseMotor()
 		break;
 
 	}
-
-
 }
 
 void IdleRoutine(uint8_t * MotorParameters)
 {
 
+	LeftMotorMotion(0,1);
+	RightMotorMotion(0,1);
+
+	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 9)) // go forward with max speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = CONSTGO9;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 6)) // go forward with medium speed - "MOTOR=0,0,6"
+	{
+		MotorRegulator = CONSTGO6;
+	}
+
+	else if((MotorParameters[0] == 1) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=1,0,0"
+	{
+		MotorRegulator = TURNINGLEFT;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 1) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,1,0"
+	{
+		MotorRegulator = TURNINGRIGHT;
+	}
+
+	else if((MotorParameters[0] == 16) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with max speed - "MOTOR=0,0,16"
+	{
+		MotorRegulator = CONSTBACK16;
+	}
+
+	else if((MotorParameters[0] == 13) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with medium speed - "MOTOR=0,0,13"
+	{
+		MotorRegulator = CONSTBACK13;
+	}
+
+
 }
 
 void ConstGo9Routine(uint8_t * MotorParameters)
 {
+		LeftMotorMotion(100,1);
+		RightMotorMotion(100,1);
+		if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
+		{
+			MotorRegulator = IDLE;
+		}
 
 }
 
