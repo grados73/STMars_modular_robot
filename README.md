@@ -14,19 +14,26 @@
 It is educational SMARS project based on STM32 BlackPill. I Created this project to learn how to develop projects on STM32 and using own 3D Printer.
 
 ## Screenshots
-It will be added.
+![STMars v1.0 photo](./photo/STMars_image1.jpg)
 
 ## Technologies
-It will be added.
+C,
+HAL for STM32F4
+Low-Layer drivers
+
+STM32CubeIDE,
+RoboRemo
 
 ## Code Examples
 It will be added.
 
 ## Features
-It will be added.
+UART in DMA mode,
+State machine.
 
 ## To-do list
-It will be added.
+APi on android,
+Standalone mode.
 
 ## Status
 Project is in progress and i will develop them to learn ARM and STM32.
