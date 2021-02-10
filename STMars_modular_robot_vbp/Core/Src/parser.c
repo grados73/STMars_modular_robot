@@ -198,12 +198,12 @@ void IdleRoutine(uint8_t * MotorParameters)
 		MotorRegulator = TURNINGRIGHT;
 	}
 
-	else if((MotorParameters[0] == 16) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with max speed - "MOTOR=0,0,16"
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 16)) // go back with max speed - "MOTOR=0,0,16"
 	{
 		MotorRegulator = CONSTBACK16;
 	}
 
-	else if((MotorParameters[0] == 13) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with medium speed - "MOTOR=0,0,13"
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 13)) // go back with medium speed - "MOTOR=0,0,13"
 	{
 		MotorRegulator = CONSTBACK13;
 	}
@@ -235,12 +235,12 @@ void ConstGo9Routine(uint8_t * MotorParameters)
 		MotorRegulator = GOANDTURNINGRIGHT;
 	}
 
-	else if((MotorParameters[0] == 16) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with max speed - "MOTOR=0,0,16"
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 16)) // go back with max speed - "MOTOR=0,0,16"
 	{
 		MotorRegulator = CONSTBACK16;
 	}
 
-	else if((MotorParameters[0] == 13) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with medium speed - "MOTOR=0,0,13"
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 13)) // go back with medium speed - "MOTOR=0,0,13"
 	{
 		MotorRegulator = CONSTBACK13;
 	}
@@ -281,12 +281,12 @@ void ConstGo6Routine(uint8_t * MotorParameters)
 		MotorRegulator = GOANDTURNINGRIGHT;
 	}
 
-	else if((MotorParameters[0] == 16) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with max speed - "MOTOR=0,0,16"
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 16)) // go back with max speed - "MOTOR=0,0,16"
 	{
 		MotorRegulator = CONSTBACK16;
 	}
 
-	else if((MotorParameters[0] == 13) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with medium speed - "MOTOR=0,0,13"
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 13)) // go back with medium speed - "MOTOR=0,0,13"
 	{
 		MotorRegulator = CONSTBACK13;
 	}
@@ -312,7 +312,7 @@ void ConstBack13Routine(uint8_t * MotorParameters)
 		MotorRegulator = IDLE;
 	}
 
-	else if((MotorParameters[0] == 16) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with max speed - "MOTOR=0,0,16"
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 16)) // go back with max speed - "MOTOR=0,0,16"
 	{
 		MotorRegulator = CONSTBACK16;
 	}
@@ -341,7 +341,7 @@ void Constback16Routine(uint8_t * MotorParameters)
 		MotorRegulator = IDLE;
 	}
 
-	else if((MotorParameters[0] == 13) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with max speed - "MOTOR=0,0,16"
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 13)) // go back with max speed - "MOTOR=0,0,16"
 	{
 		MotorRegulator = CONSTBACK13;
 	}
@@ -379,7 +379,7 @@ void GoAndTurningLeftRoutine(uint8_t * MotorParameters)
 	}
 
 
-	else if((MotorParameters[0] == 13) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with max speed - "MOTOR=0,0,16"
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 13)) // go back with max speed - "MOTOR=0,0,13"
 	{
 		MotorRegulator = CONSTBACK13;
 	}
@@ -412,7 +412,7 @@ void GoAndTurningRightRoutine(uint8_t * MotorParameters)
 	}
 
 
-	else if((MotorParameters[0] == 13) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with max speed - "MOTOR=0,0,16"
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 13)) // go back with max speed - "MOTOR=0,0,13"
 	{
 		MotorRegulator = CONSTBACK13;
 	}
