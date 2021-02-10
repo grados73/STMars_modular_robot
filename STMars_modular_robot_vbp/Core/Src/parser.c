@@ -20,11 +20,6 @@ char MyName[32] = {"No Name"}; // Name string
 MOTION_STATE MotorRegulator;
 uint8_t MotorParameters[3];	 // Left motor, Right motor, Direction of movement
 
-
-
-
-
-
 /*
  * Parsing headers:
  * 		LED=1\n 	// LED On
@@ -179,7 +174,7 @@ void SwitchMotorRegular()
 
 void IdleRoutine(uint8_t * MotorParameters)
 {
-
+	// Control signals for motors
 	LeftMotorMotion(0,1);
 	RightMotorMotion(0,1);
 
@@ -213,51 +208,273 @@ void IdleRoutine(uint8_t * MotorParameters)
 		MotorRegulator = CONSTBACK13;
 	}
 
-
 }
 
 void ConstGo9Routine(uint8_t * MotorParameters)
 {
-		LeftMotorMotion(100,1);
-		RightMotorMotion(100,1);
-		if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
-		{
-			MotorRegulator = IDLE;
-		}
+	// Control signals for motors
+	LeftMotorMotion(100,1);
+	RightMotorMotion(100,1);
+
+	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
+	{
+		MotorRegulator = IDLE;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 6)) // go forward with slower speed - "MOTOR=0,0,6"
+	{
+		MotorRegulator = CONSTGO6;
+	}
+	else if((MotorParameters[0] == 1) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=1,0,0"
+	{
+		MotorRegulator = GOANDTURNINGLEFT;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 1) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,1,0"
+	{
+		MotorRegulator = GOANDTURNINGRIGHT;
+	}
+
+	else if((MotorParameters[0] == 16) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with max speed - "MOTOR=0,0,16"
+	{
+		MotorRegulator = CONSTBACK16;
+	}
+
+	else if((MotorParameters[0] == 13) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with medium speed - "MOTOR=0,0,13"
+	{
+		MotorRegulator = CONSTBACK13;
+	}
+
+	else if((MotorParameters[0] == 1) & (MotorParameters[1] == 0) & ((MotorParameters[2] == 6) | (MotorParameters[2] == 9)))
+	{																				// go forward with medium speed and turning left - "MOTOR=1,0,9"
+		MotorRegulator = GOANDTURNINGLEFT;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 1) & ((MotorParameters[2] == 6) | (MotorParameters[2] == 9)))
+	{																				// go forward with medium speed and turning right - "MOTOR=1,0,9"
+		MotorRegulator = GOANDTURNINGRIGHT;
+	}
 
 }
 
 void ConstGo6Routine(uint8_t * MotorParameters)
 {
+	// Control signals for motors
+	LeftMotorMotion(50,1);
+	RightMotorMotion(50,1);
+	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
+	{
+		MotorRegulator = IDLE;
+	}
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 9)) // go forward with faster speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = CONSTGO9;
+	}
+
+	else if((MotorParameters[0] == 1) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=1,0,0"
+	{
+		MotorRegulator = GOANDTURNINGLEFT;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 1) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,1,0"
+	{
+		MotorRegulator = GOANDTURNINGRIGHT;
+	}
+
+	else if((MotorParameters[0] == 16) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with max speed - "MOTOR=0,0,16"
+	{
+		MotorRegulator = CONSTBACK16;
+	}
+
+	else if((MotorParameters[0] == 13) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with medium speed - "MOTOR=0,0,13"
+	{
+		MotorRegulator = CONSTBACK13;
+	}
+	else if((MotorParameters[0] == 1) & (MotorParameters[1] == 0) & ((MotorParameters[2] == 6) | (MotorParameters[2] == 9)))
+	{																				// go forward with medium speed and turning left - "MOTOR=1,0,9"
+		MotorRegulator = GOANDTURNINGLEFT;
+	}
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 1) & ((MotorParameters[2] == 6) | (MotorParameters[2] == 9)))
+	{																				// go forward with medium speed and turning right - "MOTOR=1,0,9"
+		MotorRegulator = GOANDTURNINGRIGHT;
+	}
 
 }
 
 void ConstBack13Routine(uint8_t * MotorParameters)
 {
+	// Control signals for motors
+	LeftMotorMotion(40,0);
+	RightMotorMotion(40,0);
+
+	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
+	{
+		MotorRegulator = IDLE;
+	}
+
+	else if((MotorParameters[0] == 16) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with max speed - "MOTOR=0,0,16"
+	{
+		MotorRegulator = CONSTBACK16;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 6)) // go forward with faster speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = CONSTGO6;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 9)) // go forward with faster speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = CONSTGO9;
+	}
+
 
 }
 
 void Constback16Routine(uint8_t * MotorParameters)
 {
+	// Control signals for motors
+	LeftMotorMotion(80,0);
+	RightMotorMotion(80,0);
 
+	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
+	{
+		MotorRegulator = IDLE;
+	}
+
+	else if((MotorParameters[0] == 13) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with max speed - "MOTOR=0,0,16"
+	{
+		MotorRegulator = CONSTBACK13;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 6)) // go forward with faster speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = CONSTGO6;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 9)) // go forward with faster speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = CONSTGO9;
+	}
 }
 
 void GoAndTurningLeftRoutine(uint8_t * MotorParameters)
 {
+	// Control signals for motors
+	LeftMotorMotion(10,1);
+	RightMotorMotion(100,1);
 
+	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
+	{
+		MotorRegulator = IDLE;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 6)) // go forward with faster speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = CONSTGO6;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 9)) // go forward with faster speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = CONSTGO9;
+	}
+
+
+	else if((MotorParameters[0] == 13) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with max speed - "MOTOR=0,0,16"
+	{
+		MotorRegulator = CONSTBACK13;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 1) & ((MotorParameters[2] == 6) | (MotorParameters[2] == 9)))
+	{																				// go forward with medium speed and turning right - "MOTOR=1,0,9"
+		MotorRegulator = GOANDTURNINGRIGHT;
+	}
 }
 
 void GoAndTurningRightRoutine(uint8_t * MotorParameters)
 {
+	// Control signals for motors
+	LeftMotorMotion(100,1);
+	RightMotorMotion(10,1);
+
+	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
+	{
+		MotorRegulator = IDLE;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 6)) // go forward with faster speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = CONSTGO6;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 9)) // go forward with faster speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = CONSTGO9;
+	}
+
+
+	else if((MotorParameters[0] == 13) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go back with max speed - "MOTOR=0,0,16"
+	{
+		MotorRegulator = CONSTBACK13;
+	}
+
+	else if((MotorParameters[0] == 1) & (MotorParameters[1] == 0) & ((MotorParameters[2] == 6) | (MotorParameters[2] == 9)))
+	{																				// go forward with medium speed and turning left - "MOTOR=1,0,9"
+		MotorRegulator = GOANDTURNINGLEFT;
+	}
 
 }
 
 void TurningLeftRoutine(uint8_t * MotorParameters)
 {
+	// Control signals for motors
+	LeftMotorMotion(100,0);
+	RightMotorMotion(100,1);
+
+	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
+	{
+		MotorRegulator = IDLE;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 6)) // go forward with faster speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = CONSTGO6;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 9)) // go forward with faster speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = CONSTGO9;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 1) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,1,0"
+	{
+		MotorRegulator = TURNINGRIGHT;
+	}
 
 }
 
 void TurningRightRoutine(uint8_t * MotorParameters)
 {
+	// Control signals for motors
+	LeftMotorMotion(100,1);
+	RightMotorMotion(100,0);
 
+	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
+	{
+		MotorRegulator = IDLE;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 6)) // go forward with faster speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = CONSTGO6;
+	}
+
+	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 9)) // go forward with faster speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = CONSTGO9;
+	}
+
+	else if((MotorParameters[0] == 1) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,1,0"
+	{
+		MotorRegulator = TURNINGLEFT;
+	}
 }

@@ -1939,3 +1939,51 @@ arm-none-eabi-size   STMars_modular_robot_vbp.elf
   37252	    488	   2320	  40060	   9c7c	STMars_modular_robot_vbp.elf
 Finished building: default.size.stdout
  
+18:20:04 **** Incremental Build of configuration Debug for project 06_moja_maszyna_stanow ****
+make -j4 all 
+arm-none-eabi-size   06_moja_maszyna_stanow.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33420	    156	   3708	  37284	   91a4	06_moja_maszyna_stanow.elf
+Finished building: default.size.stdout
+ 
+18:20:04 **** Incremental Build of configuration Debug for project STMars_modular_robot_vbp ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/parser.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/parser.d" -MT"Core/Src/parser.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/parser.o"
+arm-none-eabi-gcc -o "STMars_modular_robot_vbp.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\STM32MARS\STMars_modular_robot_vbp\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STMars_modular_robot_vbp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STMars_modular_robot_vbp.elf
+ 
+arm-none-eabi-objdump -h -S  STMars_modular_robot_vbp.elf  > "STMars_modular_robot_vbp.list"
+arm-none-eabi-objcopy  -O binary  STMars_modular_robot_vbp.elf  "STMars_modular_robot_vbp.bin"
+arm-none-eabi-size   STMars_modular_robot_vbp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37252	    488	   2320	  40060	   9c7c	STMars_modular_robot_vbp.elf
+Finished building: default.size.stdout
+ 
+Finished building: STMars_modular_robot_vbp.bin
+ 
+Finished building: STMars_modular_robot_vbp.list
+ 
+19:02:31 **** Incremental Build of configuration Debug for project 06_moja_maszyna_stanow ****
+make -j4 all 
+arm-none-eabi-size   06_moja_maszyna_stanow.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33420	    156	   3708	  37284	   91a4	06_moja_maszyna_stanow.elf
+Finished building: default.size.stdout
+ 
+19:02:31 **** Incremental Build of configuration Debug for project STMars_modular_robot_vbp ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/parser.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/parser.d" -MT"Core/Src/parser.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/parser.o"
+arm-none-eabi-gcc -o "STMars_modular_robot_vbp.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\STM32MARS\STMars_modular_robot_vbp\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STMars_modular_robot_vbp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STMars_modular_robot_vbp.elf
+ 
+arm-none-eabi-objdump -h -S  STMars_modular_robot_vbp.elf  > "STMars_modular_robot_vbp.list"
+arm-none-eabi-objcopy  -O binary  STMars_modular_robot_vbp.elf  "STMars_modular_robot_vbp.bin"
+arm-none-eabi-size   STMars_modular_robot_vbp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39836	    488	   2320	  42644	   a694	STMars_modular_robot_vbp.elf
+Finished building: default.size.stdout
+ 
+Finished building: STMars_modular_robot_vbp.bin
+ 
+Finished building: STMars_modular_robot_vbp.list
+ 
