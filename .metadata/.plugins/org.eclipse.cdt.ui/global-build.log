@@ -2108,3 +2108,81 @@ Finished building: STMars_modular_robot_vbp.bin
  
 Finished building: STMars_modular_robot_vbp.list
  
+19:47:50 **** Incremental Build of configuration Debug for project 06_moja_maszyna_stanow ****
+make -j4 all 
+arm-none-eabi-size   06_moja_maszyna_stanow.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33420	    156	   3708	  37284	   91a4	06_moja_maszyna_stanow.elf
+Finished building: default.size.stdout
+ 
+19:47:51 **** Incremental Build of configuration Debug for project STMars_modular_robot_vbp ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/motion.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/motion.d" -MT"Core/Src/motion.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/motion.o"
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:400:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/motion.h:7,
+                 from ../Core/Src/motion.c:7:
+../Core/Src/motion.c: In function 'RightMotorMotion':
+../Core/Src/motion.c:56:60: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, (MotorSpeed*0,9));
+                                                            ^
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1343:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+../Core/Src/motion.c:56:60: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, (MotorSpeed*0,9));
+                                                            ^
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1344:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__CHANNEL__) == TIM_CHANNEL_2) ? ((__HANDLE__)->Instance->CCR2 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+../Core/Src/motion.c:56:60: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, (MotorSpeed*0,9));
+                                                            ^
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1345:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__CHANNEL__) == TIM_CHANNEL_3) ? ((__HANDLE__)->Instance->CCR3 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+../Core/Src/motion.c:56:60: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, (MotorSpeed*0,9));
+                                                            ^
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1346:37: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__HANDLE__)->Instance->CCR4 = (__COMPARE__)))
+                                     ^~~~~~~~~~~
+arm-none-eabi-gcc -o "STMars_modular_robot_vbp.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\STM32MARS\STMars_modular_robot_vbp\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STMars_modular_robot_vbp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STMars_modular_robot_vbp.elf
+ 
+arm-none-eabi-objdump -h -S  STMars_modular_robot_vbp.elf  > "STMars_modular_robot_vbp.list"
+arm-none-eabi-objcopy  -O binary  STMars_modular_robot_vbp.elf  "STMars_modular_robot_vbp.bin"
+arm-none-eabi-size   STMars_modular_robot_vbp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39732	    488	   2320	  42540	   a62c	STMars_modular_robot_vbp.elf
+Finished building: default.size.stdout
+ 
+Finished building: STMars_modular_robot_vbp.bin
+ 
+Finished building: STMars_modular_robot_vbp.list
+ 
+19:48:17 **** Incremental Build of configuration Debug for project 06_moja_maszyna_stanow ****
+make -j4 all 
+arm-none-eabi-size   06_moja_maszyna_stanow.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33420	    156	   3708	  37284	   91a4	06_moja_maszyna_stanow.elf
+Finished building: default.size.stdout
+ 
+19:48:17 **** Incremental Build of configuration Debug for project STMars_modular_robot_vbp ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/motion.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/motion.d" -MT"Core/Src/motion.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/motion.o"
+arm-none-eabi-gcc -o "STMars_modular_robot_vbp.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\STM32MARS\STMars_modular_robot_vbp\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STMars_modular_robot_vbp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STMars_modular_robot_vbp.elf
+ 
+arm-none-eabi-objdump -h -S  STMars_modular_robot_vbp.elf  > "STMars_modular_robot_vbp.list"
+arm-none-eabi-objcopy  -O binary  STMars_modular_robot_vbp.elf  "STMars_modular_robot_vbp.bin"
+arm-none-eabi-size   STMars_modular_robot_vbp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39780	    488	   2320	  42588	   a65c	STMars_modular_robot_vbp.elf
+Finished building: default.size.stdout
+ 
+Finished building: STMars_modular_robot_vbp.bin
+ 
+Finished building: STMars_modular_robot_vbp.list
+ 
