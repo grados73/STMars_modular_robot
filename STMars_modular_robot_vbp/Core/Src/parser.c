@@ -167,6 +167,9 @@ void SwitchMotorRegular()
 	case TURNINGRIGHT:
 		TurningRightRoutine(MotorParameters);
 		break;
+	case AUTONOMOUS:
+		AutonomousRoutine(MotorParameters);
+		break;
 	default:
 		break;
 
@@ -207,6 +210,10 @@ void IdleRoutine(uint8_t * MotorParameters)
 	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 13)) // go back with medium speed - "MOTOR=0,0,13"
 	{
 		MotorRegulator = CONSTBACK13;
+	}
+	if((MotorParameters[0] == 9) & (MotorParameters[1] == 9) & (MotorParameters[2] == 9)) // go forward with max speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = AUTONOMOUS;
 	}
 
 }
@@ -255,6 +262,10 @@ void ConstGo9Routine(uint8_t * MotorParameters)
 	{																				// go forward with medium speed and turning right - "MOTOR=1,0,9"
 		MotorRegulator = GOANDTURNINGRIGHT;
 	}
+	if((MotorParameters[0] == 9) & (MotorParameters[1] == 9) & (MotorParameters[2] == 9)) // go forward with max speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = AUTONOMOUS;
+	}
 
 }
 
@@ -299,6 +310,10 @@ void ConstGo6Routine(uint8_t * MotorParameters)
 	{																				// go forward with medium speed and turning right - "MOTOR=1,0,9"
 		MotorRegulator = GOANDTURNINGRIGHT;
 	}
+	if((MotorParameters[0] == 9) & (MotorParameters[1] == 9) & (MotorParameters[2] == 9)) // go forward with max speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = AUTONOMOUS;
+	}
 
 }
 
@@ -328,6 +343,10 @@ void ConstBack13Routine(uint8_t * MotorParameters)
 		MotorRegulator = CONSTGO9;
 	}
 
+	if((MotorParameters[0] == 9) & (MotorParameters[1] == 9) & (MotorParameters[2] == 9)) // go forward with max speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = AUTONOMOUS;
+	}
 
 }
 
@@ -355,6 +374,11 @@ void Constback16Routine(uint8_t * MotorParameters)
 	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 9)) // go forward with faster speed - "MOTOR=0,0,9"
 	{
 		MotorRegulator = CONSTGO9;
+	}
+
+	if((MotorParameters[0] == 9) & (MotorParameters[1] == 9) & (MotorParameters[2] == 9)) // go forward with max speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = AUTONOMOUS;
 	}
 }
 
@@ -388,6 +412,11 @@ void GoAndTurningLeftRoutine(uint8_t * MotorParameters)
 	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 1) & ((MotorParameters[2] == 6) | (MotorParameters[2] == 9)))
 	{																				// go forward with medium speed and turning right - "MOTOR=1,0,9"
 		MotorRegulator = GOANDTURNINGRIGHT;
+	}
+
+	if((MotorParameters[0] == 9) & (MotorParameters[1] == 9) & (MotorParameters[2] == 9)) // go forward with max speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = AUTONOMOUS;
 	}
 }
 
@@ -423,6 +452,11 @@ void GoAndTurningRightRoutine(uint8_t * MotorParameters)
 		MotorRegulator = GOANDTURNINGLEFT;
 	}
 
+	if((MotorParameters[0] == 9) & (MotorParameters[1] == 9) & (MotorParameters[2] == 9)) // go forward with max speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = AUTONOMOUS;
+	}
+
 }
 
 void TurningLeftRoutine(uint8_t * MotorParameters)
@@ -449,6 +483,11 @@ void TurningLeftRoutine(uint8_t * MotorParameters)
 	else if((MotorParameters[0] == 0) & (MotorParameters[1] == 1) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,1,0"
 	{
 		MotorRegulator = TURNINGRIGHT;
+	}
+
+	if((MotorParameters[0] == 9) & (MotorParameters[1] == 9) & (MotorParameters[2] == 9)) // go forward with max speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = AUTONOMOUS;
 	}
 
 }
@@ -478,4 +517,20 @@ void TurningRightRoutine(uint8_t * MotorParameters)
 	{
 		MotorRegulator = TURNINGLEFT;
 	}
+
+	if((MotorParameters[0] == 9) & (MotorParameters[1] == 9) & (MotorParameters[2] == 9)) // go forward with max speed - "MOTOR=0,0,9"
+	{
+		MotorRegulator = AUTONOMOUS;
+	}
+}
+
+void AutonomousRoutine(uint8_t * MotorParameters)
+{
+	AutonomousMode();
+
+	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
+	{
+		MotorRegulator = IDLE;
+	}
+
 }

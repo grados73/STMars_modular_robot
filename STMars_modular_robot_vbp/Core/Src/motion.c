@@ -56,3 +56,8 @@ void RightMotorMotion(uint8_t MotorSpeed, uint8_t MotorDirection)
 	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, (MotorSpeed)); // ADD CALIBRATION SOMEDAY !
 
 }
+
+void AutonomousMode()
+{
+
+}

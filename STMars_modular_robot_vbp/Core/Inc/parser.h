@@ -16,15 +16,16 @@ void UART_ParseMotor();
 
 typedef enum
 {
-	IDLE = 0, 	//
-	CONSTGO9, //1 THE VEHICLE IS GOING FORWARD 9
-	CONSTGO6, //2 THE VEHICLE IS GOING FORWARD 9
-	CONSTBACK13, //3 THE VEHICLE IS GOING BACK 13
-	CONSTBACK16, //4 THE VEHICLE IS GOING BACK 16
-	GOANDTURNINGLEFT, // 5
-	GOANDTURNINGRIGHT, // 6
-	TURNINGLEFT,   //7
-	TURNINGRIGHT   //8
+	IDLE = 0, 				//0
+	CONSTGO9, 				// 1 THE VEHICLE IS GOING FORWARD 9
+	CONSTGO6, 				// 2 THE VEHICLE IS GOING FORWARD 9
+	CONSTBACK13, 			// 3 THE VEHICLE IS GOING BACK 13
+	CONSTBACK16, 			// 4 THE VEHICLE IS GOING BACK 16
+	GOANDTURNINGLEFT, 		// 5
+	GOANDTURNINGRIGHT,	    // 6
+	TURNINGLEFT,   			// 7
+	TURNINGRIGHT,  		    // 8
+	AUTONOMOUS  			// 9 THE VEHICLE IS SELF-DRIVING CAR
 } MOTION_STATE;
 
 typedef struct motors_struct
@@ -50,4 +51,5 @@ void GoAndTurningLeftRoutine(uint8_t * MotorParameters);
 void GoAndTurningRightRoutine(uint8_t * MotorParameters);
 void TurningLeftRoutine(uint8_t * MotorParameters);
 void TurningRightRoutine(uint8_t * MotorParameters);
+void AutonomousRoutine(uint8_t * MotorParameters);
 #endif /* INC_PARSER_H_ */

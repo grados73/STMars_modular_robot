@@ -18,6 +18,7 @@
 void ToggleUserLed(uint8_t State);
 void LeftMotorMotion(uint8_t MotorSpeed, uint8_t MotorDirection);
 void RightMotorMotion(uint8_t MotorSpeed, uint8_t MotorDirection);
+void AutonomousMode();
 
 
 
