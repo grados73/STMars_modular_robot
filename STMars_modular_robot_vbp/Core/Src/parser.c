@@ -19,6 +19,7 @@ char Message[64]; // Transmit buffer
 char MyName[32] = {"No Name"}; // Name string
 MOTION_STATE MotorRegulator;
 uint8_t MotorParameters[3];	 // Left motor, Right motor, Direction of movement
+uint8_t ChangingStateFlag;
 
 /*
  * Parsing headers:
@@ -45,6 +46,7 @@ void UART_ParseLine(UARTDMA_HandleTypeDef *huartdma)
 	  else if(strcmp(ParsePointer, "MOTOR") == 0)
 	  {
 		  UART_ParseMotor();
+		  ChangingStateFlag = 1;
 	  }
 	}
 }
@@ -122,15 +124,15 @@ void UART_ParseMotor()
 	}
 
 
-	// Print back received data
-	sprintf(Message, "Left Motor: %d\r\n", MotorParameters[0]);
-	UARTDMA_Print(&huartdma2, Message);
-
-	sprintf(Message, "Right Motor: %d\r\n", MotorParameters[1]);
-	UARTDMA_Print(&huartdma2, Message);
-
-	sprintf(Message, "Direction: %d\r\n", MotorParameters[2]);
-	UARTDMA_Print(&huartdma2, Message);
+//	// Print back received data
+//	sprintf(Message, "Left Motor: %d\r\n", MotorParameters[0]);
+//	UARTDMA_Print(&huartdma2, Message);
+//
+//	sprintf(Message, "Right Motor: %d\r\n", MotorParameters[1]);
+//	UARTDMA_Print(&huartdma2, Message);
+//
+//	sprintf(Message, "Direction: %d\r\n", MotorParameters[2]);
+//	UARTDMA_Print(&huartdma2, Message);
 
 	SwitchMotorRegular();
 
@@ -182,6 +184,12 @@ void IdleRoutine(uint8_t * MotorParameters)
 	LeftMotorMotion(0,1);
 	RightMotorMotion(0,1);
 
+	if(ChangingStateFlag)
+	{
+		UARTDMA_Print(&huartdma2, "IDLE State\r\n");
+		ChangingStateFlag = 0;
+	}
+
 	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 9)) // go forward with max speed - "MOTOR=0,0,9"
 	{
 		MotorRegulator = CONSTGO9;
@@ -223,6 +231,11 @@ void ConstGo9Routine(uint8_t * MotorParameters)
 	// Control signals for motors
 	LeftMotorMotion(100,1);
 	RightMotorMotion(100,1);
+	if(ChangingStateFlag)
+	{
+		UARTDMA_Print(&huartdma2, "CONST Vmax GO State\r\n");
+		ChangingStateFlag = 0;
+	}
 
 	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
 	{
@@ -274,6 +287,13 @@ void ConstGo6Routine(uint8_t * MotorParameters)
 	// Control signals for motors
 	LeftMotorMotion(50,1);
 	RightMotorMotion(50,1);
+
+	if(ChangingStateFlag)
+	{
+		UARTDMA_Print(&huartdma2, "CONST Vmed GO State\r\n");
+		ChangingStateFlag = 0;
+	}
+
 	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
 	{
 		MotorRegulator = IDLE;
@@ -323,6 +343,12 @@ void ConstBack13Routine(uint8_t * MotorParameters)
 	LeftMotorMotion(40,0);
 	RightMotorMotion(40,0);
 
+	if(ChangingStateFlag)
+	{
+		UARTDMA_Print(&huartdma2, "CONST Vmed GoBack State\r\n");
+		ChangingStateFlag = 0;
+	}
+
 	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
 	{
 		MotorRegulator = IDLE;
@@ -356,6 +382,12 @@ void Constback16Routine(uint8_t * MotorParameters)
 	LeftMotorMotion(80,0);
 	RightMotorMotion(80,0);
 
+	if(ChangingStateFlag)
+	{
+		UARTDMA_Print(&huartdma2, "CONST Vmax GoBack State\r\n");
+		ChangingStateFlag = 0;
+	}
+
 	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
 	{
 		MotorRegulator = IDLE;
@@ -387,6 +419,12 @@ void GoAndTurningLeftRoutine(uint8_t * MotorParameters)
 	// Control signals for motors
 	LeftMotorMotion(10,1);
 	RightMotorMotion(100,1);
+
+	if(ChangingStateFlag)
+	{
+		UARTDMA_Print(&huartdma2, "GO and Turning Left State\r\n");
+		ChangingStateFlag = 0;
+	}
 
 	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
 	{
@@ -425,6 +463,12 @@ void GoAndTurningRightRoutine(uint8_t * MotorParameters)
 	// Control signals for motors
 	LeftMotorMotion(100,1);
 	RightMotorMotion(10,1);
+
+	if(ChangingStateFlag)
+	{
+		UARTDMA_Print(&huartdma2, "GO and Turning Right State\r\n");
+		ChangingStateFlag = 0;
+	}
 
 	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
 	{
@@ -465,6 +509,12 @@ void TurningLeftRoutine(uint8_t * MotorParameters)
 	LeftMotorMotion(100,0);
 	RightMotorMotion(100,1);
 
+	if(ChangingStateFlag)
+	{
+		UARTDMA_Print(&huartdma2, "Turning Left State\r\n");
+		ChangingStateFlag = 0;
+	}
+
 	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
 	{
 		MotorRegulator = IDLE;
@@ -498,6 +548,12 @@ void TurningRightRoutine(uint8_t * MotorParameters)
 	LeftMotorMotion(100,1);
 	RightMotorMotion(100,0);
 
+	if(ChangingStateFlag)
+	{
+		UARTDMA_Print(&huartdma2, "Turning Right State\r\n");
+		ChangingStateFlag = 0;
+	}
+
 	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
 	{
 		MotorRegulator = IDLE;
@@ -527,6 +583,11 @@ void TurningRightRoutine(uint8_t * MotorParameters)
 void AutonomousRoutine(uint8_t * MotorParameters)
 {
 	AutonomousMode();
+	if(ChangingStateFlag)
+	{
+		UARTDMA_Print(&huartdma2, "Self-Driving State\r\n");
+		ChangingStateFlag = 0;
+	}
 
 	if((MotorParameters[0] == 0) & (MotorParameters[1] == 0) & (MotorParameters[2] == 0)) // go forward with max speed - "MOTOR=0,0,0"
 	{

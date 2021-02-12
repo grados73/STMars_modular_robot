@@ -15,9 +15,20 @@
 #ifndef INC_MOTION_H_
 #define INC_MOTION_H_
 
+typedef enum
+{
+	GOFORWARD, 				// 1 THE VEHICLE IS GOING FORWARD 9
+	GOBACK, 				// 2 THE VEHICLE IS GOING BACK
+	TURNING 				// 3 THE VEHICLE IS TURNING
+
+} AUTONOMOUS_STATE;
+
 void ToggleUserLed(uint8_t State);
 void LeftMotorMotion(uint8_t MotorSpeed, uint8_t MotorDirection);
 void RightMotorMotion(uint8_t MotorSpeed, uint8_t MotorDirection);
+void GoForwardRoutine();
+void GoBackRoutine();
+void TurningRoutine();
 void AutonomousMode();
 
 

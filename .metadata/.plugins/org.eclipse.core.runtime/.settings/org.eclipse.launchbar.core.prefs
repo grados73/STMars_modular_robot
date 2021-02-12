@@ -10,5 +10,5 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:14_msm_nuc_UART_DMA_RX_TX_Pars2
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STMars_modular_robot\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STMars_modular_robot\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STMars_modular_robot_v1.0\ Debug/activeLaunchMode=debug
-org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STMars_modular_robot_vbp\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STMars_modular_robot_vbp\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STMars_modular_robot_vbp\ Debug/activeLaunchTarget=null\:---
