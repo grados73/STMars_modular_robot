@@ -60,6 +60,8 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define LD1_Pin GPIO_PIN_13
 #define LD1_GPIO_Port GPIOC
+#define Trig_Pin GPIO_PIN_14
+#define Trig_GPIO_Port GPIOC
 #define PWMA_L_Motor2_Pin GPIO_PIN_1
 #define PWMA_L_Motor2_GPIO_Port GPIOA
 #define PWMB_R_Motor1_Pin GPIO_PIN_10

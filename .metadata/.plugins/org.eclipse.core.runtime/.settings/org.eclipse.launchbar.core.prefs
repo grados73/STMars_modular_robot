@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:06_moja_maszyna_stanow,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STMars_modular_robot_vbp Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:17_nuc_hc_sr04 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STMars_modular_robot_vbp Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:06_moja_maszyna_stanow/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:06_moja_maszyna_stanow/activeLaunchTarget=null\:---
@@ -10,5 +10,5 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:14_msm_nuc_UART_DMA_RX_TX_Pars2
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STMars_modular_robot\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STMars_modular_robot\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STMars_modular_robot_v1.0\ Debug/activeLaunchMode=debug
-org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STMars_modular_robot_vbp\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STMars_modular_robot_vbp\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STMars_modular_robot_vbp\ Debug/activeLaunchTarget=null\:---

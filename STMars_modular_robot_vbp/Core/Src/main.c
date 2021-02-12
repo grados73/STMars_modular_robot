@@ -23,6 +23,7 @@
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
+#include "stdio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -50,6 +51,13 @@
 UARTDMA_HandleTypeDef huartdma2;
 uint8_t BufferReceive[64];
 extern uint8_t MotorParameters[3];
+
+volatile uint32_t TimerCounterDown;
+volatile uint32_t TimerCounterUp;
+volatile uint16_t TimerEcho;
+volatile uint8_t CounterMesure;
+volatile uint8_t OdlegloscCm;
+char MessageMain[64]; // Transmit buffer
 
 /* USER CODE END PV */
 
@@ -97,6 +105,8 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM2_Init();
   MX_TIM4_Init();
+  MX_TIM1_Init();
+  MX_TIM5_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
@@ -105,6 +115,14 @@ int main(void)
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3);
   HAL_TIM_Base_Start_IT(&htim4);
+
+  /* USER CODE BEGIN 2 */
+    //
+    // URUCHOMIENIE TIMEROW DO LICZENIA CZASU TRWANIA ECHA W TRYBIE INPUT CAPTURE
+    //
+    // TIM2 f=96MHz, PSC=95, CPRD=65535, ICD=1 => Tick_timera = 1us, Przepelnienie 0,06s
+    HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_1); // zbocze narastajace -> poczatek echa
+    HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_2); // zbocze opadajace -> koniec echa
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -184,16 +202,50 @@ static void MX_NVIC_Init(void)
   /* TIM4_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(TIM4_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(TIM4_IRQn);
+  /* TIM5_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(TIM5_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(TIM5_IRQn);
 }
 
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-	if(htim->Instance == TIM4)
+	if(htim->Instance == TIM4) // with f = 10Hz upgrade motor parameters & check the distance
 	{
 	SwitchMotorRegular();
+	HAL_GPIO_WritePin(Trig_GPIO_Port, Trig_Pin, GPIO_PIN_SET);
+	HAL_TIM_Base_Start_IT(&htim5);
+	}
+
+	if(htim->Instance == TIM5)// TIM5 -> f=96MHz, PSC = 95, CPRD = 9, ISD = 1 => Tick_timer = 1us, Przepelnienie 10us
+	{
+	HAL_GPIO_WritePin(Trig_GPIO_Port, Trig_Pin, GPIO_PIN_RESET);
+	HAL_TIM_Base_Stop_IT(&htim5);
 	}
 }
+//
+// LICZENIE CZASU TRWANIA ECHA
+//
+	void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
+	{
+		if(htim->Instance == TIM1)
+		{
+			if(htim->Channel == HAL_TIM_ACTIVE_CHANNEL_1) // zbocze narastajace -> poczatek echa
+			{
+				TimerCounterUp = __HAL_TIM_GetCompare(htim, TIM_CHANNEL_1);
+				HAL_TIM_IC_Start_IT(htim, TIM_CHANNEL_1); //
+
+			}
+			else if (htim->Channel == HAL_TIM_ACTIVE_CHANNEL_2) //zbocze opadajace -> koniec echa
+			{
+				TimerCounterDown = __HAL_TIM_GetCompare(htim, TIM_CHANNEL_2);
+				HAL_TIM_IC_Start_IT(htim, TIM_CHANNEL_2); //
+				TimerEcho = TimerCounterDown - TimerCounterUp;	// czas trwania echa
+				OdlegloscCm = (uint8_t)(TimerEcho/58);			}
+		}
+	}
+
+
 /* USER CODE END 4 */
 
 /**
