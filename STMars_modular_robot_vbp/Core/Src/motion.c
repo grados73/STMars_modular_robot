@@ -53,6 +53,6 @@ void RightMotorMotion(uint8_t MotorSpeed, uint8_t MotorDirection)
 	}
 
 	if(MotorSpeed > 100) MotorSpeed = 100;
-	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, (MotorSpeed*0.9));
+	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, (MotorSpeed*0.9)); // ADD CALIBRATION SOMEDAY !
 
 }

@@ -51,13 +51,11 @@ UARTDMA_HandleTypeDef huartdma2;
 uint8_t BufferReceive[64];
 extern uint8_t MotorParameters[3];
 
-uint32_t CurrentTime = 0;
-uint32_t LastMotorTime = 0;
-uint32_t TimeBetweenMotors = 100;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+static void MX_NVIC_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -80,7 +78,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-HAL_Init();
+  HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -98,10 +96,15 @@ HAL_Init();
   MX_DMA_Init();
   MX_USART2_UART_Init();
   MX_TIM2_Init();
+  MX_TIM4_Init();
+
+  /* Initialize interrupts */
+  MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
   UARTDMA_Init(&huartdma2, &huart2);
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3);
+  HAL_TIM_Base_Start_IT(&htim4);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -121,12 +124,6 @@ HAL_Init();
 	  //
 	  UARTDMA_TransmitEvent(&huartdma2);
 
-	 CurrentTime = HAL_GetTick();
-	 if(CurrentTime - LastMotorTime >= TimeBetweenMotors)
-	 {
-		 SwitchMotorRegular();
-		 LastMotorTime = CurrentTime;
-	 }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -178,8 +175,25 @@ void SystemClock_Config(void)
   }
 }
 
-/* USER CODE BEGIN 4 */
+/**
+  * @brief NVIC Configuration.
+  * @retval None
+  */
+static void MX_NVIC_Init(void)
+{
+  /* TIM4_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(TIM4_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(TIM4_IRQn);
+}
 
+/* USER CODE BEGIN 4 */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	if(htim->Instance == TIM4)
+	{
+	SwitchMotorRegular();
+	}
+}
 /* USER CODE END 4 */
 
 /**
