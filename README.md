@@ -13,8 +13,11 @@
 ## General info
 It is educational SMARS project based on STM32 BlackPill. I Created this project to learn how to develop projects on STM32 and using own 3D Printer.
 
+STMars has two modes of working, the first one is remote control via Bluetooth, using a phone and HC-05 module, second mode is the ability to drive autonomously and avoid obstacles.
+
 ## Screenshots
 ![STMars v1.0 photo](./photo/STMars_image1.jpg)
+![STMars RRApi](./photo/APi_RR.jpg)
 
 ## Technologies
 C,
@@ -25,15 +28,15 @@ STM32CubeIDE,
 RoboRemo
 
 ## Code Examples
-It will be added.
+![Code_example1](./photo/code1.png)
 
 ## Features
 UART in DMA mode,
 State machine.
 
 ## To-do list
-APi on android,
-Standalone mode.
+Upgrade standalone mode.
+Add calibration of engine speed by optocoupler
 
 ## Status
 Project is in progress and i will develop them to learn ARM and STM32.
