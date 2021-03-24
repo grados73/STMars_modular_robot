@@ -13,7 +13,7 @@
 ## General info
 It is educational SMARS project based on STM32 BlackPill. I created this project to learn how to develop projects on STM32 and how to use my own 3D Printer.
 
-STMars has two modes of working, the first one is remote control via Bluetooth, using a phone and HC-05 module, second mode is the ability to drive autonomously and avoid obstacles.
+STMars has two modes of working, the first one is remote control via Bluetooth, using a phone and HC-05 module, second mode is the ability to drive autonomously and to avoid obstacles.
 
 ## Screenshots
 ![STMars v1.0 photo](./photo/STMars_image1.jpg)
